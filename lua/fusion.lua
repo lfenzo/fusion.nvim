@@ -84,11 +84,11 @@ end
 --
 --
 hi { group = "Normal", guibg = palette.background }
-hi { group = "ErrorMsg", guibg = palette.fusion1 }
+hi { group = "ErrorMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "Search", guifg = palette.black, guibg = palette.yellow, } 
-hi { group = "IncSearch", guibg = palette.yellow, } 
+hi { group = "IncSearch", guifg = palette.black, guibg = palette.yellow, } 
 
 -- statusline
 hi { group = "StatusLine", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"} 
@@ -118,7 +118,9 @@ hi { group = "Title", guifg = palette.light_red, gui = "bold"}
 hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "ModeMsg", guifg = palette.white, guibg = palette.black, gui = "bold"}
 hi { group = "NonText", guifg = "#808080", gui = "bold"}
--- hi Question     ctermfg=231 cterm=none
+
+hi { group = "Question", guifg = palette.yellow, gui = "bold"}
+
 
 -- Menus
 hi { group = "Menu", guifg = palette.white, guibg = "#808080", gui = "bold"}
