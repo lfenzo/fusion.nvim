@@ -116,7 +116,7 @@ hi { group = "SpecialKey", guifg = palette.red, gui = "bold"}
 hi { group = "Directory", guifg = palette.light_blue, gui = "bold"}
 hi { group = "Title", guifg = palette.light_red, gui = "bold"}
 hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
-hi { group = "ModeMsg", guifg = palette.light_red, gui = "bold"}
+hi { group = "ModeMsg", guifg = palette.white, guibg = palette.black, gui = "bold"}
 hi { group = "NonText", guifg = "#808080", gui = "bold"}
 -- hi Question     ctermfg=231 cterm=none
 
