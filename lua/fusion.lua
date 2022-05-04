@@ -5,41 +5,35 @@ vim.cmd [[
 
 vim.g.colors_name = "fusion"
 
-local fusion0  = "#232323"
-local fusion1  = "#FF1E08"
-local fusion2  = "#69E10B"
-local fusion3  = "#FFB900"
-local fusion4  = "#3586FF"
-local fusion5  = "#9C65E8"
-local fusion6  = "#00D8EB"
-local fusion7  = "#D0CFCC"
-local fusion8  = "#949494"
-local fusion9  = "#FF3C4D"
-local fusion10 = "#9FEF28"
-local fusion11 = "#FFD242"
-local fusion12 = "#5997FF"
-local fusion13 = "#CA95FF"
-local fusion14 = "#67FFF0"
-local fusion15 = "#FFFFFF"
+ palette = {
 
-local palette = {
-   background = "#1c1c1c",
-   search = "",
-   visual_selection = "",
-   error_message = "",
+   fusion0  = "#232323",
+   fusion1  = "#FF1E08",
+   fusion2  = "#69E10B",
+   fusion3  = "#FFB900",
+   fusion4  = "#3586FF",
+   fusion5  = "#9C65E8",
+   fusion6  = "#00D8EB",
+   fusion7  = "#D0CFCC",
+   fusion8  = "#949494",
+   fusion9  = "#FF3C4D",
+   fusion10 = "#9FEF28",
+   fusion11 = "#FFD242",
+   fusion12 = "#5997FF",
+   fusion13 = "#CA95FF",
+   fusion14 = "#67FFF0",
+   fusion15 = "#FFFFFF",
 
-   black        = "#232323",
-   white        = "#FFFFFF",
-   blue         = "#5c83f7",
-   orange       = "#ff875f",
-   red          = "#FF1E08",
-   green        = "#5eae86",
-   purple       = "#ae5efe",
-   yellow       = "#ffd809",
-   grey         = "#545454",
+   black   = "#232323",
+   white   = "#FFFFFF",
+   blue    = "#5c83f7",
+   orange  = "#ff875f",
+   red     = "#FF1E08",
+   green   = "#5eae86",
+   purple  = "#ae5efe",
+   yellow  = "#ffd809",
 
    light_blue   = "#7fa4ee",
-   light_grey   = "#d0d0d0",
    light_orange = "#f7aa5d",
    light_red    = "#f75c5c",
    light_green  = "#82cf82",
@@ -47,22 +41,22 @@ local palette = {
 }
 
 -- Neovim Terminal Colors
-vim.g.terminal_color_0  = fusion0 
-vim.g.terminal_color_1  = fusion1 
-vim.g.terminal_color_2  = fusion2 
-vim.g.terminal_color_3  = fusion3 
-vim.g.terminal_color_4  = fusion4 
-vim.g.terminal_color_5  = fusion5 
-vim.g.terminal_color_6  = fusion6 
-vim.g.terminal_color_7  = fusion7 
-vim.g.terminal_color_8  = fusion8 
-vim.g.terminal_color_9  = fusion9 
-vim.g.terminal_color_10 = fusion10
-vim.g.terminal_color_11 = fusion11
-vim.g.terminal_color_12 = fusion12
-vim.g.terminal_color_13 = fusion13
-vim.g.terminal_color_14 = fusion14
-vim.g.terminal_color_15 = fusion15
+vim.g.terminal_color_0  = palette.fusion0 
+vim.g.terminal_color_1  = palette.fusion1 
+vim.g.terminal_color_2  = palette.fusion2 
+vim.g.terminal_color_3  = palette.fusion3 
+vim.g.terminal_color_4  = palette.fusion4 
+vim.g.terminal_color_5  = palette.fusion5 
+vim.g.terminal_color_6  = palette.fusion6 
+vim.g.terminal_color_7  = palette.fusion7 
+vim.g.terminal_color_8  = palette.fusion8 
+vim.g.terminal_color_9  = palette.fusion9 
+vim.g.terminal_color_10 = palette.fusion10
+vim.g.terminal_color_11 = palette.fusion11
+vim.g.terminal_color_12 = palette.fusion12
+vim.g.terminal_color_13 = palette.fusion13
+vim.g.terminal_color_14 = palette.fusion14
+vim.g.terminal_color_15 = palette.fusion15
 
 local hi = function(opts)
   vim.cmd(
@@ -84,67 +78,245 @@ end
 -- // ------------------------------------------------- // 
 -- // ------------------------------------------------- // 
 
+--
+--
+-- Interface
+--
+--
 hi { group = "Normal", guibg = palette.background }
 hi { group = "ErrorMsg", guibg = palette.fusion1 }
--- hi { group = "visual", guibg = palette.visual }
+hi { group = "visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "Search", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "IncSearch", guibg = palette.yellow, } 
 
+-- statusline
+hi { group = "StatusLine", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"} 
+hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"} 
+hi { group = "VertSplit", guifg = "#b2b2b2", guibg = "#262626"} 
 
-hi { group = "TSComment", guifg = palette.light_blue, } 
-hi { group = "TSAnnotation", guifg = palette.light_blue, } 
-hi { group = "TSAttribute", guifg = palette.light_blue, } 
-hi { group = "TSConstructor", guifg = palette.light_blue, } 
-hi { group = "TSType", guifg = palette.blue, gui = "bold" } 
-hi { group = "TSTypeBuiltin", guifg = palette.blue, gui = "bold" } 
-hi { group = "TSRepeat", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSOperator", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "TSFloat", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "TSNumber", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "TSBoolean", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "TSConditional ", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSString ", guifg = palette.light_green, gui = "bold" } 
-hi { group = "TSException", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSKeyword", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSFunction", guifg = palette.orange, gui = "bold" } 
-hi { group = "TSMethod", guifg = palette.white, gui = "bold" } 
-hi { group = "TSInclude", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSKeywordReturn", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSKeywordFunction ", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "TSPunctBracket", guifg = palette.white } 
-hi { group = "TSPunctSpecial", guifg = palette.red } 
-hi { group = "TSPunctDelimiter", guifg = palette.light_orange } 
-hi { group = "TSVariable", guifg = palette.white } 
-hi { group = "TSParameter", guifg = palette.white } 
-hi { group = "TSParameterReference", guifg = palette.white } 
-hi { group = "TSKeywordOperator", guifg = palette.light_orange } 
-hi { group = "TSConstMacro", guifg = palette.white } 
-hi { group = "TSFuncMacro", guifg = palette.purple, gui = "bold" } 
-hi { group = "TSConstant", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "TSStringRegex", guifg = palette.orange, gui = "bold" } 
-hi { group = "TSConstBuiltin", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "TSNamespace", guifg = palette.green, gui = "bold" } 
-hi { group = "TSLabel", guifg = palette.red, gui = "bold" } 
-hi { group = "TSVariableBuiltin", guifg = palette.purple, gui = "bold" } 
-hi { group = "TSFuncBuiltin", guifg = palette.white, gui = "bold" } 
-hi { group = "TSProperty", guifg = palette.orange, gui = "bold" } 
-hi { group = "TSField", guifg = palette.white, } 
-hi { group = "TSSymbol", guifg = palette.orange} 
-hi { group = "TSTagDelimiter", guifg = palette.orange } 
-hi { group = "TSTag", guifg = palette.light_blue } 
-hi { group = "TSCharacter", guifg = palette.light_green } 
-hi { group = "TSTitle", guifg = palette.light_green, gui = "bold" } 
-hi { group = "TSStructure", guifg = palette.red, gui = "bold" } 
-hi { group = "TSText", guifg = palette.light_green, gui = "bold" } 
-hi { group = "TSTagAttribute", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "TSStringEscape", guifg = palette.orange, gui = "bold" } 
+-- Tabs
+hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"} 
+hi { group = "TabLine", guifg = "#b2b2b2", guibg = "#484848", } 
+hi { group = "TabLineSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold" } 
 
---		TSError = {fg = C.error_red, },
---		TSEmphasis = {style = "italic", },
---		TSUnderline = {style = "underline", },
---		TSLiteral = {fg = C.orange, },
---		TSURI = {fg = C.orange, style = "underline", },
---		TSStrong = {fg = C.blue, style = "bold", },
---		TSQueryLinterError = {fg = C.warning_orange, },
---		TreesitterContext = {bg = C.tree_gray, },
+-- hi Folded       ctermfg=10 ctermbg=none cterm=bold
+-- hi FoldColumn   ctermfg=10 ctermbg=none cterm=bold
+hi { group = "ColorColumn", guibg = "#343434" } 
+hi { group = "SignColumn", guibg = "#1c1c1c" } 
+
+-- line number/cursor
+hi { group = "LineNr", guifg = "#939393" } 
+hi { group = "CursorLineNr", guifg = palette.white, guibg = "#444444", gui = "bold" } 
+hi { group = "CursorLine", guibg = "#303030" } 
+hi { group = "CursorIM", guibg = "#303030" } 
+hi { group = "MatchParen", guifg = palette.yellow, guibg = palette.black, gui = "bold"} 
+
+hi { group = "SpecialKey", guifg = palette.red, gui = "bold"}
+hi { group = "Directory", guifg = palette.light_blue, gui = "bold"}
+hi { group = "Title", guifg = palette.light_red, gui = "bold"}
+hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
+hi { group = "ModeMsg", guifg = palette.light_red, gui = "bold"}
+hi { group = "NonText", guifg = "#808080", gui = "bold"}
+-- hi Question     ctermfg=231 cterm=none
+
+-- Menus
+hi { group = "Menu", guifg = palette.white, guibg = "#808080", gui = "bold"}
+hi { group = "WildMenu", guifg = palette.white, guibg = "#b2b2b2", gui = "bold"}
+hi { group = "Pmenu", guifg = palette.white, guibg = "#808080", gui = "bold"}
+hi { group = "PmenuSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"}
+hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
+hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
+
+--
+-- Generic syntax
+--
+hi { group = "Comment", guifg = "#808080", } 
+hi { group = "SpecialComment", guifg = "#808080", gui = "bold" } 
+hi { group = "Constant", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "String", guifg = palette.light_green, gui = "bold" } 
+hi { group = "Character", guifg = palette.light_green, gui = "bold" } 
+hi { group = "Number", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "Float", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "Boolean", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "Special", guifg = palette.orange, gui = "bold" } 
+hi { group = "SpecialChar", guifg = palette.purple, gui = "bold" } 
+hi { group = "Debug", guifg = palette.purple, gui = "bold" } 
+hi { group = "Tag", guifg = palette.purple, gui = "bold" } 
+hi { group = "Delimiter", guifg = palette.light_red, gui = "bold" } 
+hi { group = "Identifier", guifg = palette.green, gui = "bold" } 
+hi { group = "Function", guifg = palette.orange, gui = "bold" } 
+hi { group = "Operator", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "Statement", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "Conditional", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "Repeat", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "Label", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "Keyword", guifg = palette.light_red, gui = "bold" } 
+hi { group = "Exeption", guifg = palette.orange, gui = "bold" } 
+hi { group = "Type", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "StorageClass", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "Structure", guifg = palette.light_red, gui = "bold" } 
+hi { group = "Typedef", guifg = palette.orange, gui = "bold" } 
+hi { group = "PreCondit", guifg = palette.light_red, gui = "bold" } 
+hi { group = "PreProc", guifg = palette.light_red, gui = "bold" } 
+hi { group = "Include", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "Define", guifg = palette.white, gui = "bold" } 
+hi { group = "Macro", guifg = palette.blue, gui = "bold" } 
+
+--
+-- Python-specific syntax
+--
+hi { group = "pythonClassVar", guifg = palette.purple, gui = "bold" } 
+hi { group = "pythonFunctionCall", guifg = palette.white, gui = "bold" } 
+hi { group = "pythonBuiltinObj", guifg = palette.blue, gui = "bold" } 
+hi { group = "pythonBuiltinFunc", guifg = palette.blue, gui = "bold" } 
+hi { group = "pythonDecorator", guifg = palette.light_red, gui = "bold" } 
+
+--
+-- Julia-specific syntax 
+--
+hi { group = "juliaParDelim", guifg = palette.white, } 
+hi { group = "juliaSemicolon", guifg = palette.white, gui = "bold"} 
+hi { group = "juliaComma", guifg = palette.white, gui = "bold" } 
+hi { group = "juliaFunctionCall", guifg = palette.white, gui = "bold" } 
+hi { group = "juliaColon", guifg = palette.white, } 
+hi { group = "juliaFunctionName", guifg = palette.orange, gui = "bold"} 
+hi { group = "juliaFunctionName1", guifg = palette.orange, gui = "bold"} 
+hi { group = "juliaMacroName", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaKeyword", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaWhereKeyword", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaInfixKeyword", guifg = palette.light_orange, gui = "bold"} 
+hi { group = "juliaIsaKeyword", guifg = palette.light_orange, gui = "bold"} 
+hi { group = "juliaAsKeyword", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaRepKeyword", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaBlKeyword", guifg = palette.light_red, gui = "bold"} 
+hi { group = "juliaConditional", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaRepeat", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaException", guifg = palette.light_blue, gui = "bold"} 
+hi { group = "juliaOuter", guifg = palette.light_blue, gui = "bold"} 
+
+-- Types
+hi { group = "juliaBaseTypeBasic", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeNum", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeC", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeError", guifg = palette.light_red, gui = "bold"} 
+hi { group = "juliaBaseTypeIter", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeString", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeArray", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeDict", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeSet", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeIO", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeProcess", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeRange", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeRegex", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeFact", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeSort", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeRound", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeSpecial", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeRandom", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeDisplay", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeTime", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaBaseTypeOther", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliatype", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaParamTope", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaTypeOperatorR1", guifg = palette.white, gui = "bold" } 
+
+hi { group = "juliaTypeOperatorR1", guifg = palette.white, gui = "bold" } 
+hi { group = "juliaConstNum", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaEuler", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstEnv", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstC", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstLimits", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstGeneric", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaRangeKeyword", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstBool", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaConstIO", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaComprehensionFor", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaComprehensionIf", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaDollarVar", guifg = palette.orange, gui = "bold" } 
+hi { group = "juliaFunction", guifg = palette.light_red, gui = "bold" } 
+hi { group = "juliaMacro", guifg = palette.purple, gui = "bold" } 
+hi { group = "juliaSymbol", guifg = palette.green, gui = "bold" } 
+hi { group = "juliaSymbolS", guifg = palette.green, gui = "bold" } 
+hi { group = "juliaQParDelim", guifg = palette.green, gui = "bold" } 
+hi { group = "juliaQuotedQMarkPar", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaQuotedQMark", guifg = palette.light_red, gui = "bold" } 
+hi { group = "juliaNumber", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaFloat", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "juliaComplexUnit", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "juliaChar", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaStringPrefixed", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliabString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliasString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliavString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliarString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaipString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliabigString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaMIMEString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliarawString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliatestString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliahtmlString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaint128String", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaPrintfString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaShellString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaDocString", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaDocStringM", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaDocStringMRaw", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaStringDelim", guifg = palette.green, gui = "bold" } 
+hi { group = "juliaDocStringDelim", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaStringVarsPla", guifg = palette.orange, gui = "bold" } 
+hi { group = "juliaStringVarDelim", guifg = palette.orange, gui = "bold" } 
+hi { group = "juliaRegEx", guifg = palette.light_green, gui = "bold" } 
+hi { group = "juliaSpecialChar", guifg = palette.purple, gui = "bold" } 
+hi { group = "juliaOctalEscapeChar", guifg = palette.purple, gui = "bold" } 
+hi { group = "juliaHexEscapeChar", guifg = palette.purple, gui = "bold" } 
+hi { group = "juliaUniCharSmall", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaUniCharLarge", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaDoubleBackslash", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaEscapedQuote", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaPrintfFmt", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaOperatorHL", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "juliaOperator", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "juliaRangeOperator", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaCTransOperator", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaTernaryOperator", guifg = palette.light_orange, gui = "bold" } 
+
+--
+-- Latex-spacific syntax
+--
+hi { group = "texDocType", guifg = palette.blue, gui = "bold" } 
+hi { group = "texDocTypeArgs", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "texInputFile", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texInputFileOpt", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "texMathMatcher", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathSymbol", guifg = palette.light_green, gui = "bold" } 
+hi { group = "texMathZoneA", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneV", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneW", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneX", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneY", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneV", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneZ", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texMathZoneAS", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texCite", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texSection", guifg = palette.light_red, gui = "bold" } 
+hi { group = "texSectionTitle", guifg = palette.light_green, gui = "bold" } 
+hi { group = "texStatement", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "texTypeSize", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "texTypeStyle", guifg = palette.light_blue, gui = "bold" } 
+
+--
+--Markdown Syntax
+--
+hi { group = "mkdBlockquote", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "mkdCodeStart", guifg = palette.light_red, gui = "bold" } 
+hi { group = "mkdCodeEnd", guifg = palette.light_red, gui = "bold" } 
+hi { group = "mkdCode", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "mkdIndentCode", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mdkCodeDelimiter", guifg = palette.orange, gui = "bold" } 
+hi { group = "mkdListItem", guifg = palette.orange, gui = "bold" } 
+hi { group = "mkdLinkTitle", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mkdRule", guifg = palette.light_red, gui = "bold" } 
+hi { group = "mkdLink", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mkdURL", guifg = palette.light_purple, gui = "bold" } 
