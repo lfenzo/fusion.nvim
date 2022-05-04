@@ -85,7 +85,9 @@ end
 --
 hi { group = "Normal", guibg = palette.background }
 hi { group = "ErrorMsg", guifg = palette.fusion9, gui = "bold"}
-hi { group = "visual", guibg = "#636363" }
+hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
+hi { group = "MsgArea", guifg = palette.white, }
+hi { group = "Visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "Search", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "IncSearch", guifg = palette.black, guibg = palette.yellow, } 
