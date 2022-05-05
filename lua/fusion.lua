@@ -158,7 +158,7 @@ hi { group = "Repeat", guifg = palette.light_blue, gui = "bold" }
 hi { group = "Label", guifg = palette.light_blue, gui = "bold" } 
 hi { group = "Keyword", guifg = palette.light_red, gui = "bold" } 
 hi { group = "Exeption", guifg = palette.orange, gui = "bold" } 
-hi { group = "Type", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "Type", guifg = palette.blue, gui = "bold" } 
 hi { group = "StorageClass", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "Structure", guifg = palette.light_red, gui = "bold" } 
 hi { group = "Typedef", guifg = palette.orange, gui = "bold" } 
@@ -182,7 +182,7 @@ hi { group = "pythonDecorator", guifg = palette.light_red, gui = "bold" }
 --
 hi { group = "juliaParDelim", guifg = palette.white, } 
 hi { group = "juliaSemicolon", guifg = palette.white, gui = "bold"} 
-hi { group = "juliaComma", guifg = palette.white, gui = "bold" } 
+hi { group = "juliaComma", guifg = palette.white } 
 hi { group = "juliaFunctionCall", guifg = palette.white, gui = "bold" } 
 hi { group = "juliaColon", guifg = palette.white, } 
 hi { group = "juliaFunctionName", guifg = palette.orange, gui = "bold"} 
@@ -222,11 +222,10 @@ hi { group = "juliaBaseTypeRandom", guifg = palette.blue, gui = "bold"}
 hi { group = "juliaBaseTypeDisplay", guifg = palette.blue, gui = "bold"} 
 hi { group = "juliaBaseTypeTime", guifg = palette.blue, gui = "bold"} 
 hi { group = "juliaBaseTypeOther", guifg = palette.blue, gui = "bold"} 
-hi { group = "juliatype", guifg = palette.blue, gui = "bold"} 
+hi { group = "juliaType", guifg = palette.blue, gui = "bold"} 
 hi { group = "juliaParamTope", guifg = palette.blue, gui = "bold"} 
 hi { group = "juliaTypeOperatorR1", guifg = palette.white, gui = "bold" } 
 
-hi { group = "juliaTypeOperatorR1", guifg = palette.white, gui = "bold" } 
 hi { group = "juliaConstNum", guifg = palette.light_purple, gui = "bold" } 
 hi { group = "juliaEuler", guifg = palette.light_purple, gui = "bold" } 
 hi { group = "juliaConstEnv", guifg = palette.light_purple, gui = "bold" } 
@@ -325,3 +324,30 @@ hi { group = "mkdLinkTitle", guifg = palette.light_blue, gui = "bold" }
 hi { group = "mkdRule", guifg = palette.light_red, gui = "bold" } 
 hi { group = "mkdLink", guifg = palette.light_blue, gui = "bold" } 
 hi { group = "mkdURL", guifg = palette.light_purple, gui = "bold" } 
+
+--
+-- C-plus=plus Syntax
+--
+hi { group = "cppAccess", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "cppCast", guifg = palette.red, gui = "bold" } 
+hi { group = "cppModifier", guifg = palette.blue, gui = "bold" } 
+hi { group = "cppOperator", guifg = palette.light_blue, gui = "bold" } 
+
+
+--
+-- Javascript syntax 
+--
+hi { group = "jsFuncCall", guifg = palette.white, gui = "bold" } 
+hi { group = "jsThis", guifg = palette.purple, gui = "bold" } 
+hi { group = "jsSuper", guifg = palette.purple, gui = "bold" } 
+hi { group = "jsClassProperty", guifg = palette.green, gui = "bold" } 
+hi { group = "jsObjectShorthandProp", guifg = palette.green, gui = "bold" } 
+hi { group = "jsModuleComma", guifg = palette.white } 
+hi { group = "jsNull", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "jsBuiltins", guifg = palette.blue, gui = "bold" } 
+hi { group = "jsFuncName", guifg = palette.orange, gui = "bold" } 
+hi { group = "jsArrowFuncArgs", guifg = palette.orange, gui = "bold" } 
+hi { group = "jsFunction", guifg = palette.light_red, gui = "bold" } 
+hi { group = "jsArrowFunction", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "jsNull", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "jsHtmlElemAttrs", guifg = palette.light_purple, gui = "bold" } 
