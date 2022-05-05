@@ -91,6 +91,7 @@ hi { group = "Visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "Search", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "IncSearch", guifg = palette.black, guibg = palette.yellow, } 
+hi { group = "Error", } -- ignore
 
 -- statusline
 hi { group = "StatusLine", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"} 
@@ -111,11 +112,11 @@ hi { group = "SignColumn", guibg = "#1c1c1c" }
 hi { group = "LineNr", guifg = "#939393" } 
 hi { group = "CursorLineNr", guifg = palette.white, guibg = "#444444", gui = "bold" } 
 hi { group = "CursorLine", guibg = "#303030" } 
-hi { group = "CursorIM", guibg = "#303030" } 
-hi { group = "MatchParen", guifg = palette.yellow, guibg = palette.black, gui = "bold"} 
+hi { group = "CursorIM", guibg = "#303030" }
+hi { group = "MatchParen", guifg = palette.white, guibg = "#949494", gui = "bold"} 
 
 hi { group = "SpecialKey", guifg = palette.red, gui = "bold"}
-hi { group = "Directory", guifg = palette.light_blue, gui = "bold"}
+hi { group = "Directory", guifg = palette.light_purple, gui = "bold"}
 hi { group = "Title", guifg = palette.light_red, gui = "bold"}
 hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "ModeMsg", guifg = palette.white, guibg = palette.black, gui = "bold"}
