@@ -115,15 +115,13 @@ hi { group = "CursorLine", guibg = "#303030" }
 hi { group = "CursorIM", guibg = "#303030" }
 hi { group = "MatchParen", guifg = palette.white, guibg = "#949494", gui = "bold"} 
 
-hi { group = "SpecialKey", guifg = palette.red, gui = "bold"}
+hi { group = "SpecialKey", guifg = palette.purple, gui = "bold"}
 hi { group = "Directory", guifg = palette.light_purple, gui = "bold"}
 hi { group = "Title", guifg = palette.light_red, gui = "bold"}
 hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "ModeMsg", guifg = palette.white, guibg = palette.black, gui = "bold"}
 hi { group = "NonText", guifg = "#808080", gui = "bold"}
-
 hi { group = "Question", guifg = palette.yellow, gui = "bold"}
-
 
 -- Menus
 hi { group = "Menu", guifg = palette.white, guibg = "#808080", gui = "bold"}
@@ -132,6 +130,8 @@ hi { group = "Pmenu", guifg = palette.white, guibg = "#808080", gui = "bold"}
 hi { group = "PmenuSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"}
 hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
 hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
+
+
 
 --
 -- Generic syntax
