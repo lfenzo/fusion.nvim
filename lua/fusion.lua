@@ -371,3 +371,20 @@ hi { group = "javaAnnotation", guifg = palette.blue, gui = "bold" }
 hi { group = "javaClassDecl", guifg = palette.orange, gui = "bold" } 
 hi { group = "javaMethodDecl", guifg = palette.orange, gui = "bold" } 
 hi { group = "javaOperator", guifg = palette.light_orange, gui = "bold" } 
+
+
+--
+-- Mardkdown-syntax
+--
+hi { group = "mkdBlockquote", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "mkdCodeStart", guifg = palette.green, gui = "bold" } 
+hi { group = "mkdHeaderTitle", guifg = palette.green, gui = "bold" } 
+hi { group = "mkdCodeEnd", guifg = palette.green, gui = "bold" } 
+hi { group = "mkdCode", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "mkdIndentCode", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mdkCodeDelimiter", guifg = palette.orange, gui = "bold" } 
+hi { group = "mkdListItem", guifg = palette.orange, gui = "bold" } 
+hi { group = "mkdLinkTitle", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mkdRule", guifg = palette.orange, gui = "bold" } 
+hi { group = "mkdLink", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "mkdURL", guifg = palette.light_purple, gui = "bold" } 
