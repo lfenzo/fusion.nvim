@@ -132,7 +132,6 @@ hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
 hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
 
 
-
 --
 -- Generic syntax
 --
@@ -166,7 +165,7 @@ hi { group = "PreCondit", guifg = palette.light_red, gui = "bold" }
 hi { group = "PreProc", guifg = palette.light_red, gui = "bold" } 
 hi { group = "Include", guifg = palette.light_blue, gui = "bold" } 
 hi { group = "Define", guifg = palette.white, gui = "bold" } 
-hi { group = "Macro", guifg = palette.blue, gui = "bold" } 
+hi { group = "Macro", guifg = palette.green, gui = "bold" } 
 
 --
 -- Python-specific syntax
@@ -331,7 +330,7 @@ hi { group = "mkdURL", guifg = palette.light_purple, gui = "bold" }
 hi { group = "cppAccess", guifg = palette.light_blue, gui = "bold" } 
 hi { group = "cppCast", guifg = palette.red, gui = "bold" } 
 hi { group = "cppModifier", guifg = palette.blue, gui = "bold" } 
-hi { group = "cppOperator", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "cppOperator", guifg = palette.light_orange, gui = "bold" } 
 
 
 --
@@ -351,3 +350,24 @@ hi { group = "jsFunction", guifg = palette.light_red, gui = "bold" }
 hi { group = "jsArrowFunction", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "jsNull", guifg = palette.light_purple, gui = "bold" } 
 hi { group = "jsHtmlElemAttrs", guifg = palette.light_purple, gui = "bold" } 
+
+--
+-- Telescope syntax
+--
+hi { group = "TelescopeSelection", guifg = palette.light_orange, gui = "bold" } 
+hi { group = "TelescopeMatching",  guifg = palette.black, guibg = palette.yellow, gui = "bold" } 
+hi { group = "TelescopeBorder", guifg = palette.white, gui = "bold" } 
+hi { group = "TelescopeSelectionCaret", guifg = palette.orange, gui = "bold" } 
+
+--
+-- Java
+--
+hi { group = "javaTypedef", guifg = palette.purple, gui = "bold" } 
+hi { group = "javaStorageClass", guifg = palette.orange, gui = "bold" } 
+hi { group = "javaScopeDecl", guifg = palette.light_red, gui = "bold" } 
+hi { group = "javaExternal", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "javaError", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "javaAnnotation", guifg = palette.blue, gui = "bold" } 
+hi { group = "javaClassDecl", guifg = palette.orange, gui = "bold" } 
+hi { group = "javaMethodDecl", guifg = palette.orange, gui = "bold" } 
+hi { group = "javaOperator", guifg = palette.light_orange, gui = "bold" } 
