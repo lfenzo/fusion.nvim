@@ -88,7 +88,8 @@ hi { group = "ErrorMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "MsgArea", guifg = palette.white, }
 hi { group = "Visual", guibg = "#636363" }
-hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, } 
+hi { group = "Todo", guifg = palette.black, guibg = palette.yellow, gui = "bold"} 
+hi { group = "Note", guifg = palette.black, guibg = palette.yellow, gui = "bold"} 
 hi { group = "Search", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "IncSearch", guifg = palette.black, guibg = palette.yellow, } 
 hi { group = "Error", } -- ignore
