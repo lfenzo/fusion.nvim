@@ -29,7 +29,7 @@ vim.g.colors_name = "fusion"
    blue    = "#5c83f7",
    orange  = "#ff875f",
    red     = "#FF1E08",
-   green   = "#5eae86",
+   green   = "#5fafaf",
    purple  = "#ae5efe",
    yellow  = "#ffd809",
 
