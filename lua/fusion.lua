@@ -184,7 +184,7 @@ hi { group = "juliaParDelim", guifg = palette.white, }
 hi { group = "juliaSemicolon", guifg = palette.white, gui = "bold"} 
 hi { group = "juliaComma", guifg = palette.white } 
 hi { group = "juliaFunctionCall", guifg = palette.white, gui = "bold" } 
-hi { group = "juliaColon", guifg = palette.white, } 
+hi { group = "juliaColon", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "juliaFunctionName", guifg = palette.orange, gui = "bold"} 
 hi { group = "juliaFunctionName1", guifg = palette.orange, gui = "bold"} 
 hi { group = "juliaMacroName", guifg = palette.light_blue, gui = "bold"} 
