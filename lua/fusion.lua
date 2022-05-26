@@ -283,7 +283,7 @@ hi { group = "juliaPrintfFmt", guifg = palette.light_blue, gui = "bold" }
 hi { group = "juliaOperatorHL", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "juliaOperator", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "juliaRangeOperator", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "juliaCTransOperator", guifg = palette.light_blue, gui = "bold" } 
+hi { group = "juliaCTransOperator", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "juliaTernaryOperator", guifg = palette.light_orange, gui = "bold" } 
 
 --
