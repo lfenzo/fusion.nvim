@@ -1,16 +1,16 @@
 ```
-              ___           ___           ___                       ___           ___     
-             /\__\         /\  \         /\__\                     /\  \         /\  \    
-            /:/ _/_        \:\  \       /:/ _/_       ___         /::\  \        \:\  \   
-           /:/ /\__\        \:\  \     /:/ /\  \     /\__\       /:/\:\  \        \:\  \  
-          /:/ /:/  /    ___  \:\  \   /:/ /::\  \   /:/__/      /:/  \:\  \   _____\:\  \ 
-         /:/_/:/  /    /\  \  \:\__\ /:/_/:/\:\__\ /::\  \     /:/__/ \:\__\ /::::::::\__\
-         \:\/:/  /     \:\  \ /:/  / \:\/:/ /:/  / \/\:\  \__  \:\  \ /:/  / \:\~~\~~\/__/
-          \::/__/       \:\  /:/  /   \::/ /:/  /   ~~\:\/\__\  \:\  /:/  /   \:\  \      
-           \:\  \        \:\/:/  /     \/_/:/  /       \::/  /   \:\/:/  /     \:\  \     
-            \:\__\        \::/  /        /:/  /        /:/  /     \::/  /       \:\__\    
-             \/__/         \/__/         \/__/         \/__/       \/__/         \/__/
-        
+        ___           ___           ___                       ___           ___     
+       /\__\         /\  \         /\__\                     /\  \         /\  \    
+      /:/ _/_        \:\  \       /:/ _/_       ___         /::\  \        \:\  \   
+     /:/ /\__\        \:\  \     /:/ /\  \     /\__\       /:/\:\  \        \:\  \  
+    /:/ /:/  /    ___  \:\  \   /:/ /::\  \   /:/__/      /:/  \:\  \   _____\:\  \ 
+   /:/_/:/  /    /\  \  \:\__\ /:/_/:/\:\__\ /::\  \     /:/__/ \:\__\ /::::::::\__\
+   \:\/:/  /     \:\  \ /:/  / \:\/:/ /:/  / \/\:\  \__  \:\  \ /:/  / \:\~~\~~\/__/
+    \::/__/       \:\  /:/  /   \::/ /:/  /   ~~\:\/\__\  \:\  /:/  /   \:\  \      
+     \:\  \        \:\/:/  /     \/_/:/  /       \::/  /   \:\/:/  /     \:\  \     
+      \:\__\        \::/  /        /:/  /        /:/  /     \::/  /       \:\__\    
+       \/__/         \/__/         \/__/         \/__/       \/__/         \/__/
+    
 ```
 
 Neovim Fusion is a dark colorscheme for Neovim written in Lua featuring highly ~~radioactive~~ vibrant colors. As far as sanity is concerned, Fusion uses the _In-Your-Face_ principle as much as possible, bringing to focus totally unimportant details of your programming langague of choice. 
@@ -23,7 +23,7 @@ Note that Fusion works best (whatever that may mean) when [vim-polyglot](https:/
 
 We don't recommend it, but in case you have the bad idea of installing it here's how it goes:
 
-Inside your `plugins.lua` don't add the following:
+Inside your `plugins.lua` add the following:
 
 ```lua
 return packer.startup(function(use)
@@ -41,7 +41,7 @@ return packer.startup(function(use)
 end)
 ```
 
-And also don't add the following your `init.lua` or equivalent:
+And also add the following your `init.lua` or equivalent:
 
 ```lua
 -- ...
@@ -56,5 +56,5 @@ end
 -- ...
 ```
 
-Hopefully, if you followed carefully the steps previously mentioned you won't have installed it.
+Hopefully, if you followed carefully the steps previously mentioned you will have changed your mind and dicided not to install it.
 
