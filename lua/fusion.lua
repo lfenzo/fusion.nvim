@@ -14,7 +14,7 @@ palette = {
   heavy_green = "#5FAFAF",
 
   light_purple = "#AC85FB",
-  heavy_purple = "#AE5EFE",
+  heavy_purple = "#AF65FE",
 
   light_orange = "#FFAF5F",
   heavy_orange = "#FF875F",
@@ -149,7 +149,7 @@ hi { group = "TSAttribute",  guifg = palette.medium_grey, }
 hi { group = "TSBoolean",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "TSCharacter",  guifg = palette.light_green, gui = "bold"}
 hi { group = "TSCharacterSpecial",  guifg = palette.light_red, gui = "bold"}
--- -- hi { group = "TSComment",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSComment",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSConditional",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "TSConstant",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "TSConstBuiltin",  guifg = palette.light_purple, gui = "bold"}
@@ -159,7 +159,7 @@ hi { group = "TSConstructor",  guifg = palette.white, gui = "bold"}
 hi { group = "TSDefine",  guifg = palette.light_red, gui = "bold"}
 -- hi { group = "TSError",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSException",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "TSField",  guifg = palette.heavy_grey, }
+hi { group = "TSField",  guifg = palette.medium_grey, }
 hi { group = "TSFloat",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "TSFunction",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "TSFunctionCall",  guifg = palette.white, gui = "bold"}
@@ -173,7 +173,7 @@ hi { group = "TSKeywordReturn",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "TSLabel",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "TSMethod",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "TSMethodCall",  guifg = palette.white, gui = "bold"}
-hi { group = "TSNamespace",  guifg = palette.heavy_yellow, gui = "bold"}
+hi { group = "TSNamespace",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "TSNumber",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "TSOperator",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSParameter",  guifg = palette.heavy_grey, gui = "bold"}
@@ -190,21 +190,21 @@ hi { group = "TSStringRegex",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "TSStringEscape",  guifg = palette.heavy_purple, gui = "bold"}
 hi { group = "TSStringSpecial",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "TSSymbol",  guifg = palette.heavy_green, gui = "bold"}
-hi { group = "TSTag",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSTagAttribute",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSTagDelimiter",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSText",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSTag",  guifg = palette.ligth_blue, gui = "bold"}
+hi { group = "TSTagAttribute",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSTagDelimiter",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "TSText",  guifg = palette.ehite, }
 -- -- hi { group = "TSStrong",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSEmphasis",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSEmphasis",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSUnderline",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSStrike",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSTitle",  guifg = palette.light_red, gui = "bold"}
--- -- hi { group = "TSLiteral",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSURI",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSMath",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSTextReference",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSEnvironment",  guifg = palette.light_blue, gui = "bold"}
--- -- hi { group = "TSEnvironmentName",  guifg = palette.heavy_orange, gui = "bold"}
+-- hi { group = "TSLiteral",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSURI",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "TSMath",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSTextReference",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "TSEnvironment",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "TSEnvironmentName",  guifg = palette.heavy_orange, gui = "bold"}
 -- -- hi { group = "TSNote",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSWarning",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSDanger",  guifg = palette.light_orange, gui = "bold"}
@@ -233,10 +233,10 @@ hi { group = "NvimTreeFolderIcon",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NvimTreeGitDirty",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NvimTreeGitNew",  guifg = palette.git_dirty_yellow, gui = "bold" }
 hi { group = "NvimTreeFileIcon",  guifg = palette.light_blue, gui = "bold" }
-hi { group = "NvimTreeExecFile",  guifg = palette.white, }
-hi { group = "NvimTreeOpenedFile",  guifg = palette.white, }
-hi { group = "NvimTreeImageFile",  guifg = palette.white, }
-hi { group = "NvimTreeSpecialFile",  guifg = palette.white, }
-hi { group = "NvimTreeImageFile",  guifg = palette.white, }
+hi { group = "NvimTreeExecFile",  guifg = palette.medium_grey, }
+hi { group = "NvimTreeOpenedFile",  guifg = palette.medium_grey, }
+hi { group = "NvimTreeImageFile",  guifg = palette.medium_grey, }
+hi { group = "NvimTreeSpecialFile",  guifg = palette.medium_grey, }
+hi { group = "NvimTreeImageFile",  guifg = palette.medium_grey, }
 
 
