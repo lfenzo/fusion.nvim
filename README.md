@@ -13,47 +13,35 @@
     
 ```
 
-Neovim Fusion is a dark colorscheme for Neovim written in Lua featuring highly ~~radioactive~~ vibrant colors. As far as sanity is concerned, Fusion uses the _In-Your-Face_ principle as much as possible, bringing to focus totally unimportant details of your programming langague of choice. 
+Neovim Fusion is a dark colorscheme for Neovim written in Lua featuring highly ~~radioactive~~ vibrant colors. As far as sanity is concerned, Fusion uses the _In-Your-Face_ principle as much as possible, bringing to focus totally unimportant details of your programming language of choice. 
 
 ![](./img/cover.png)
 
-Note that Fusion works best (whatever that may mean) when [vim-polyglot](https://github.com/sheerun/vim-polyglot) is installed thanks to its fancier syntax definitions.
+## Installation
 
-## :hammer_and_wrench: Installation
+Note that there are basically two flavours of NeoVim Fusion available:
+- Branch `main`: using the definitions provided by [nvim-tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter) generic syntax;
+- Branch `vim-polyglot`: using the definitions provided by [vim-polyglot](ihttps://github.com/sheerun/vim-polyglot) (this was intended as the original version, but it was later replaced by the tree-sitter implementation).
 
-We don't recommend it, but in case you have the bad idea of installing it here's how it goes:
+We don't recommend the installation, but in case you have the bad idea of installing it here's how it goes:
 
-Inside your `plugins.lua` add the following:
+1. Inside your `plugins.lua` add the following:
 
 ```lua
 return packer.startup(function(use)
-
   -- ...
-
-  use "lfenzo/fusion.nvim"
-  use "sheerun/vim-polyglot"
-
+  use {"lfenzo/fusion.nvim", branch = "main"} -- or 'vim-polyglot' for the tree sitter branch
   -- ...
-
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
 end)
 ```
 
-And also add the following your `init.lua` or equivalent:
+2. Add the following your `init.lua` or equivalent:
 
 ```lua
--- ...
-local colorscheme = "fusion"
-
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-
-if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
-  return
-end
--- ...
+vim.cmd[[colorscheme fusion]]
 ```
 
 Hopefully, if you followed carefully the steps previously mentioned you will have changed your mind and dicided not to install it.
