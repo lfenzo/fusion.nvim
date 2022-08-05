@@ -64,7 +64,7 @@ hi { group = "Todo", guifg = palette.black, guibg = palette.heavy_yellow, gui = 
 hi { group = "Note", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
 hi { group = "Search", guifg = palette.black, guibg = palette.heavy_yellow, } 
 hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
--- hi { group = "Error", } -- ignore
+--hi { group = "Error", guifg = palette.white, gui = "bold"} -- ignore
 
 -- statusline
 hi { group = "StatusLine", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"} 
@@ -155,9 +155,9 @@ hi { group = "TSConstant",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "TSConstBuiltin",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "TSConstMacro",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSConstructor",  guifg = palette.white, gui = "bold"}
--- hi { group = "TSDebug",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSDebug",  guifg = palette.white, gui = "bold"}
 hi { group = "TSDefine",  guifg = palette.light_red, gui = "bold"}
--- hi { group = "TSError",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSError",  guibg = palette.light_yellow, gui = "bold"}
 hi { group = "TSException",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "TSField",  guifg = palette.medium_grey, }
 hi { group = "TSFloat",  guifg = palette.light_purple, gui = "bold"}
@@ -180,7 +180,7 @@ hi { group = "TSParameter",  guifg = palette.heavy_grey, gui = "bold"}
 hi { group = "TSParameterReference",  guifg = palette.white }
 hi { group = "TSPreProc",  guifg = palette.light_red, gui = "bold"}
 hi { group = "TSProperty",  guifg = palette.medium_grey, }
-hi { group = "TSPunctDelimiter",  guifg = palette.light_orange }
+hi { group = "TSPunctDelimiter",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSPunctBracket",  guifg = palette.white }
 hi { group = "TSPunctSpecial",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "TSRepeat",  guifg = palette.light_blue, gui = "bold"}
@@ -231,7 +231,7 @@ hi { group = "NvimTreeRootFolder",  guifg = palette.heavy_orange, gui = "bold" }
 hi { group = "NvimTreeOpenedFolderName",  guifg = palette.light_purple, gui = "bold" }
 hi { group = "NvimTreeFolderIcon",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NvimTreeGitDirty",  guifg = palette.light_orange, gui = "bold" }
-hi { group = "NvimTreeGitNew",  guifg = palette.git_dirty_yellow, gui = "bold" }
+hi { group = "NvimTreeGitNew",  guifg = palette.git_add_green, gui = "bold" }
 hi { group = "NvimTreeFileIcon",  guifg = palette.light_blue, gui = "bold" }
 hi { group = "NvimTreeExecFile",  guifg = palette.medium_grey, }
 hi { group = "NvimTreeOpenedFile",  guifg = palette.medium_grey, }
