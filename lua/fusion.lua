@@ -183,7 +183,6 @@ hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bol
 hi { group = "@punctuation.bracket",  guifg = palette.white }
 hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@repeat",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "TSStorageClass",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@string",  guifg = palette.light_green, gui = "bold"}
 hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
@@ -192,22 +191,22 @@ hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@tag",  guifg = palette.ligth_blue, gui = "bold"}
 hi { group = "@tag.attribute",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "TSText",  guifg = palette.ehite, }
--- -- hi { group = "TSStrong",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSEmphasis",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSUnderline",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSStrike",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSTitle",  guifg = palette.light_red, gui = "bold"}
--- hi { group = "TSLiteral",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSURI",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "TSMath",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSTextReference",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSEnvironment",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "TSEnvironmentName",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@text",  guifg = palette.ehite, }
+hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.emphasis",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.underline",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.strike",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.title",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@text.literal",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSURI",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@text.math",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.reference",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.environment",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@text.environment.name",  guifg = palette.heavy_orange, gui = "bold"}
 -- -- hi { group = "TSNote",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSWarning",  guifg = palette.light_orange, gui = "bold"}
 -- -- hi { group = "TSDanger",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "TSTodo",  guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"}
+hi { group = "@todo",  guifg = palette.black, guibg = palette.heavy_red, gui = "bold"}
 hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "TSTypeQualifier",  guifg = palette.heavy_blue, gui = "bold"}
