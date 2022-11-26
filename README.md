@@ -30,7 +30,7 @@ We don't recommend the installation, but in case you have the bad idea of instal
 ```lua
 return packer.startup(function(use)
   -- ...
-  use {"lfenzo/fusion.nvim", branch = "main"} -- or 'vim-polyglot' for the tree sitter branch
+  use {"lfenzo/fusion.nvim", branch = "main"} -- or `branch = "vim-polyglot"` for the vim-polyglot branch
   -- ...
   if PACKER_BOOTSTRAP then
     require("packer").sync()
@@ -43,6 +43,3 @@ end)
 ```lua
 vim.cmd[[colorscheme fusion]]
 ```
-
-Hopefully, if you followed carefully the steps previously mentioned you will have changed your mind and dicided not to install it.
-
