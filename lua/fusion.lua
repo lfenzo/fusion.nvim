@@ -22,8 +22,6 @@ palette = {
   light_red = "#FF5F5F",
   heavy_red = "#FF1E08",
   
-  --light_yellow = "#FFEA84",
-  lighthest_yellow = "#FFD571",
   light_yellow = "#ffd787",
   heavy_yellow = "#FFDC2F",
 
@@ -62,7 +60,7 @@ hi { group = "MsgArea", guifg = palette.white, }
 hi { group = "Visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
 hi { group = "Note", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
-hi { group = "Search", guifg = palette.black, guibg = palette.heavy_yellow, } 
+hi { group = "Search", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
 hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
 --hi { group = "Error", guifg = palette.white, gui = "bold"} -- ignore
 
@@ -148,7 +146,7 @@ hi { group = "@attribute",  guifg = palette.medium_grey, }
 hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@character",  guifg = palette.light_green, gui = "bold"}
 hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
--- hi { group = "@comment",  guifg = palette.heavy_gray, gui = "bold"}
+hi { group = "@comment",  guifg = "#808080"} -- same as the NeoVim builtin syntax group "Comment"
 hi { group = "@conditional",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
@@ -188,8 +186,8 @@ hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
 hi { group = "@string.special",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
-hi { group = "@tag",  guifg = palette.ligth_blue, gui = "bold"}
-hi { group = "@tag.attribute",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@tag",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@tag.attribute",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@text",  guifg = palette.ehite, }
 hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
@@ -198,20 +196,20 @@ hi { group = "@text.underline",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@text.strike",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@text.title",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@text.literal",  guifg = palette.light_orange, gui = "bold"}
--- hi { group = "TSURI",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@text.uri",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@text.math",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@text.reference",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@text.environment",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@text.environment.name",  guifg = palette.heavy_orange, gui = "bold"}
--- -- hi { group = "TSNote",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSWarning",  guifg = palette.light_orange, gui = "bold"}
--- -- hi { group = "TSDanger",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSWarning",  guifg = palette.light_orange, gui = "bold"}
+-- hi { group = "TSDanger",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@note",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@todo",  guifg = palette.black, guibg = palette.heavy_red, gui = "bold"}
 hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "TSTypeQualifier",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "TSTypeDefinition",  guifg = palette.light_blue, gui = "bold"}
--- hi { group = "@variable",  guifg = palette.white}
+hi { group = "@type.qualifier",  guifg = palette.heavy_blue, gui = "bold"}
+hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@variable",  guifg = palette.white}
 hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
 
 --
