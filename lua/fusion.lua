@@ -28,9 +28,8 @@ palette = {
   white = "#F6F5F4",
   black = "#000000",
 
-  light_grey = "#EDEDED",
-  medium_grey = "#DADADA",
-  heavy_grey = "#C4C4C4",
+  light_grey = "#CECECE",
+  heavy_grey = "#B8B8B8",
 
   git_add_green = "#00D787",
   git_del_red = "#FF3C4D",
@@ -107,7 +106,7 @@ hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
 --
 hi { group = "Comment", guifg = "#808080", } 
 hi { group = "SpecialComment", guifg = "#808080", gui = "bold" } 
-hi { group = "Constant", guifg = palette.light_purple, gui = "bold" } 
+hi { group = "Constant", guifg = palette.heavy_green, gui = "bold" } 
 hi { group = "String", guifg = palette.light_green, gui = "bold" } 
 hi { group = "Character", guifg = palette.light_green, gui = "bold" } 
 hi { group = "Number", guifg = palette.light_purple, gui = "bold" } 
@@ -142,7 +141,7 @@ hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" }
 -- Tree-Sitter Generic Syntax
 --
 --
-hi { group = "@attribute",  guifg = palette.medium_grey, }
+hi { group = "@attribute",  guifg = palette.light_grey, }
 hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@character",  guifg = palette.light_green, gui = "bold"}
 hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
@@ -153,10 +152,10 @@ hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@constant.macro",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@constructor",  guifg = palette.white, gui = "bold"}
 -- hi { group = "TSDebug",  guifg = palette.white, gui = "bold"}
-hi { group = "@define",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@define",  guifg = palette.light_yellow, gui = "bold"}
 -- hi { group = "TSError",  guibg = palette.light_yellow, gui = "bold"}
 hi { group = "@exception",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@field",  guifg = palette.medium_grey, }
+hi { group = "@field",  guifg = palette.light_grey, }
 hi { group = "@float",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@function.call",  guifg = palette.white, gui = "bold"}
@@ -176,7 +175,7 @@ hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@parameter",  guifg = palette.heavy_grey, gui = "bold"}
 hi { group = "@parameter.reference",  guifg = palette.white }
 hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@property",  guifg = palette.medium_grey, }
+hi { group = "@property",  guifg = palette.light_grey, }
 hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@punctuation.bracket",  guifg = palette.white }
 hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
@@ -229,9 +228,9 @@ hi { group = "NvimTreeFolderIcon",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NvimTreeGitDirty",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NvimTreeGitNew",  guifg = palette.git_add_green, gui = "bold" }
 hi { group = "NvimTreeFileIcon",  guifg = palette.light_blue, gui = "bold" }
-hi { group = "NvimTreeExecFile",  guifg = palette.medium_grey, }
-hi { group = "NvimTreeOpenedFile",  guifg = palette.medium_grey, }
-hi { group = "NvimTreeImageFile",  guifg = palette.medium_grey, }
-hi { group = "NvimTreeSpecialFile",  guifg = palette.medium_grey, }
-hi { group = "NvimTreeImageFile",  guifg = palette.medium_grey, }
+hi { group = "NvimTreeExecFile",  guifg = palette.light_grey, }
+hi { group = "NvimTreeOpenedFile",  guifg = palette.light_grey, }
+hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
+hi { group = "NvimTreeSpecialFile",  guifg = palette.light_grey, }
+hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
 
