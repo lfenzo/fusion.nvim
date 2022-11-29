@@ -117,7 +117,7 @@ hi { group = "SpecialChar", guifg = palette.purple, gui = "bold" }
 hi { group = "Debug", guifg = palette.purple, gui = "bold" } 
 hi { group = "Tag", guifg = palette.purple, gui = "bold" } 
 hi { group = "Delimiter", guifg = palette.light_red, gui = "bold" } 
-hi { group = "Identifier", guifg = palette.heavy_green, gui = "bold" } 
+hi { group = "Identifier", }
 hi { group = "Function", guifg = palette.heavy_orange, gui = "bold" } 
 hi { group = "Operator", guifg = palette.light_orange, gui = "bold" } 
 hi { group = "Statement", guifg = palette.light_blue, gui = "bold" } 
@@ -206,9 +206,9 @@ hi { group = "@note",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@todo",  guifg = palette.black, guibg = palette.heavy_red, gui = "bold"}
 hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "@type.qualifier",  guifg = palette.heavy_blue, gui = "bold"}
+hi { group = "@type.qualifier",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@variable",  guifg = palette.white}
+-- hi { group = "@variable",  guifg = palette.white}
 hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
 
 --
