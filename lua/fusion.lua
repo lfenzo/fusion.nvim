@@ -137,81 +137,6 @@ hi { group = "Define", guifg = palette.white, gui = "bold" }
 hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" } 
 
 --
---
--- Tree-Sitter Generic Syntax
---
---
-hi { group = "@attribute",  guifg = palette.light_grey, }
-hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "@character",  guifg = palette.light_green, gui = "bold"}
-hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@comment",  guifg = "#808080"} -- same as the NeoVim builtin syntax group "Comment"
-hi { group = "@conditional",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
-hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "@constant.macro",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@constructor",  guifg = palette.white, gui = "bold"}
--- hi { group = "TSDebug",  guifg = palette.white, gui = "bold"}
-hi { group = "@define",  guifg = palette.light_yellow, gui = "bold"}
--- hi { group = "TSError",  guibg = palette.light_yellow, gui = "bold"}
-hi { group = "@exception",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@field",  guifg = palette.light_grey, }
-hi { group = "@float",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@function.call",  guifg = palette.white, gui = "bold"}
-hi { group = "@function.builtin",  guifg = palette.white, gui = "bold"}
-hi { group = "@function.macro",  guifg = palette.heavy_purple, gui = "bold"}
-hi { group = "@include",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@keyword",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@keyword.function",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@keyword.operator",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@keyword.return",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@label",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "@method",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@method.call",  guifg = palette.white, gui = "bold"}
-hi { group = "@namespace",  guifg = palette.light_yellow, gui = "bold"}
-hi { group = "@number",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@parameter",  guifg = palette.heavy_grey, gui = "bold"}
-hi { group = "@parameter.reference",  guifg = palette.white }
-hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@property",  guifg = palette.light_grey, }
-hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@punctuation.bracket",  guifg = palette.white }
-hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@repeat",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@string",  guifg = palette.light_green, gui = "bold"}
-hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
-hi { group = "@string.special",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
-hi { group = "@tag",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@tag.attribute",  guifg = palette.light_yellow, gui = "bold"}
-hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@text",  guifg = palette.ehite, }
-hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.emphasis",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.underline",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.strike",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.title",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@text.literal",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.uri",  guifg = palette.light_purple, gui = "bold"}
-hi { group = "@text.math",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.reference",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@text.environment",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@text.environment.name",  guifg = palette.heavy_orange, gui = "bold"}
--- hi { group = "TSWarning",  guifg = palette.light_orange, gui = "bold"}
--- hi { group = "TSDanger",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@note",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@todo",  guifg = palette.black, guibg = palette.heavy_red, gui = "bold"}
-hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
-hi { group = "@type.qualifier",  guifg = palette.light_red, gui = "bold"}
-hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
--- hi { group = "@variable",  guifg = palette.white}
-hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
-
---
 -- GitSigns
 --
 hi { group = "GitSignsAdd",  guifg = palette.git_add_green, gui = "bold" }
@@ -234,3 +159,119 @@ hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
 hi { group = "NvimTreeSpecialFile",  guifg = palette.light_grey, }
 hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
 
+
+--
+--
+--
+-- Tree-Sitter Generic Syntax
+--
+--
+--
+
+-- Miscellaneous
+hi { group = "@comment",  guifg = "#808080", }
+hi { group = "@error",  guifg = palette.light_grey, }
+hi { group = "@none",  guifg = palette.light_grey, }
+hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@define",  guifg = palette.light_yellow, gui = "bold"}
+hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
+
+-- Punctuation
+hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@punctuation.bracket",  guifg = palette.white }
+hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
+
+-- Literal
+hi { group = "@string",  guifg = palette.light_green, gui = "bold"}
+hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
+hi { group = "@string.special",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@character",  guifg = palette.light_green, gui = "bold"}
+hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@number",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@float",  guifg = palette.light_purple, gui = "bold"}
+
+-- Functions
+hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@function.builtin",  guifg = palette.white, gui = "bold"}
+hi { group = "@function.call",  guifg = palette.white, gui = "bold"}
+hi { group = "@function.macro",  guifg = palette.heavy_purple, gui = "bold"}
+hi { group = "@method",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@method.call",  guifg = palette.white, gui = "bold"}
+hi { group = "@constructor",  guifg = palette.white, gui = "bold"}
+hi { group = "@parameter",  guifg = palette.heavy_grey, gui = "bold"}
+
+-- Keywords
+hi { group = "@keyword",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@keyword.function",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@keyword.operator",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@keyword.return",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@conditional",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@conditional.ternary",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@repeat",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@debug",  guifg = palette.heavy_grey, gui = "bold"}
+hi { group = "@label",  guifg = palette.heavy_blue, gui = "bold"}
+hi { group = "@include",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@exception",  guifg = palette.light_blue, gui = "bold"}
+
+-- Types
+hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
+hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
+hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@type.qualifier",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@storageclass",  guifg = palette.light_yellow, gui = "bold"}
+hi { group = "@attribute",  guifg = palette.light_grey, }
+hi { group = "@field",  guifg = palette.light_grey, }
+hi { group = "@property",  guifg = palette.light_grey, }
+
+-- Identifiers
+-- hi { group = "@variable",  guifg = palette.light_grey, }
+hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
+hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@constant.macro",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@namespace",  guifg = palette.light_yellow, gui = "bold"}
+hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
+
+-- Text
+hi { group = "@text",  guifg = palette.ehite, }
+hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.emphasis",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.underline",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.strike",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.title",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@text.literal",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.uri",  guifg = palette.light_purple, gui = "bold"}
+hi { group = "@text.math",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.environment",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@text.environment.name",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@text.reference",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@text.todo",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@text.note",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@text.warning",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@text.danger",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@text.diff.add",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@text.diff.delete",  guifg = palette.heavy_green, gui = "bold"}
+
+-- Tags
+hi { group = "@tag",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@tag.attribute",  guifg = palette.light_yellow, gui = "bold"}
+hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
+
+-- Locals
+hi { group = "@definition",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.constant",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.function",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.method",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.var",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.parameter",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.macro",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.type",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.field",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.enum",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.namespace",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.import",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@definition.associated",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@scope",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@reference",  guifg = palette.light_blue, gui = "bold"}
