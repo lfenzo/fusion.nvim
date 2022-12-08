@@ -94,7 +94,7 @@ hi { group = "Question", guifg = palette.yellow, gui = "bold"}
 
 -- Menus
 hi { group = "Menu", guifg = palette.white, guibg = "#808080", gui = "bold"}
-hi { group = "WildMenu", guifg = palette.white, guibg = "#b2b2b2", gui = "bold"}
+hi { group = "WildMenu", guifg = palette.black, guibg = "#b2b2b2", gui = "bold"}
 hi { group = "Pmenu", guifg = palette.white, guibg = "#808080", gui = "bold"}
 hi { group = "PmenuSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"}
 hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
@@ -159,6 +159,17 @@ hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
 hi { group = "NvimTreeSpecialFile",  guifg = palette.light_grey, }
 hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
 
+--
+-- Telescope
+--
+hi { group = "TelescopeNormal", guifg = palette.heavy_grey, }
+hi { group = "TelescopePromptNormal", guifg = palette.white, }
+hi { group = "TelescopeTitle", guifg = palette.white, gui = "bold" }
+hi { group = "TelescopeBorder", guifg = palette.white, gui = "bold" }
+hi { group = "TelescopeSelection", guifg = palette.white, guibg = "#636363", gui = "bold" }
+hi { group = "TelescopeSelectionCaret", guifg = palette.black, guibg = palette.light_yellow, gui = "bold" }
+hi { group = "TelescopeMatching", guifg = palette.heavy_yellow, gui = "bold" }
+hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold" }
 
 --
 --
