@@ -167,7 +167,7 @@ hi { group = "TelescopePromptNormal", guifg = palette.white, }
 hi { group = "TelescopeTitle", guifg = palette.white, gui = "bold" }
 hi { group = "TelescopeBorder", guifg = palette.white, gui = "bold" }
 hi { group = "TelescopeSelection", guifg = palette.white, guibg = "#636363", gui = "bold" }
-hi { group = "TelescopeSelectionCaret", guifg = palette.black, guibg = palette.light_yellow, gui = "bold" }
+hi { group = "TelescopeSelectionCaret", guifg = palette.heavy_yellow, guibg = "#636363", gui = "bold" }
 hi { group = "TelescopeMatching", guifg = palette.heavy_yellow, gui = "bold" }
 hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold" }
 
