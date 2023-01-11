@@ -73,7 +73,8 @@ hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"}
 hi { group = "TabLine", guifg = "#b2b2b2", guibg = "#484848", } 
 hi { group = "TabLineSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold" } 
 
--- hi Folded       ctermfg=10 ctermbg=none cterm=bold
+hi { group = "Folded", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
+hi { group = "FoldColumn", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
 -- hi FoldColumn   ctermfg=10 ctermbg=none cterm=bold
 hi { group = "ColorColumn", guibg = "#343434" } 
 hi { group = "SignColumn", guibg = "#1c1c1c" } 
