@@ -233,7 +233,7 @@ hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@type.qualifier",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@storageclass",  guifg = palette.light_yellow, gui = "bold"}
-hi { group = "@attribute",  guifg = palette.light_grey, }
+hi { group = "@attribute",  guifg = palette.light_yellow, gui = "bold" }
 hi { group = "@field",  guifg = palette.light_grey, }
 hi { group = "@property",  guifg = palette.light_grey, }
 
