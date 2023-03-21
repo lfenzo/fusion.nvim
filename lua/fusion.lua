@@ -17,9 +17,9 @@ palette = {
   heavy_purple = "#AF65FE",
 
   light_orange = "#FFAF5F",
-  heavy_orange = "#FF875F",
+  heavy_orange = "#FF9900",
 
-  light_red = "#FF5F5F",
+  light_red = "#f27059",
   heavy_red = "#FF1E08",
   
   light_yellow = "#ffd787",
@@ -27,6 +27,10 @@ palette = {
 
   white = "#F6F5F4",
   black = "#000000",
+
+  grey1 = "#CED4DA",
+  grey2 = "#BEC5CC",
+  grey3 = "#ADB5BD",
 
   light_grey = "#CECECE",
   heavy_grey = "#B8B8B8",
@@ -64,23 +68,23 @@ hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, g
 --hi { group = "Error", guifg = palette.white, gui = "bold"} -- ignore
 
 -- statusline
-hi { group = "StatusLine", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"} 
+hi { group = "StatusLine", guifg = palette.black, guibg = "#999999", gui = "bold"} 
 hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"} 
-hi { group = "VertSplit", guifg = "#b2b2b2", guibg = "#262626"} 
+hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626"} 
 
 -- Tabs
 hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"} 
 hi { group = "TabLine", guifg = "#b2b2b2", guibg = "#484848", } 
-hi { group = "TabLineSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold" } 
+hi { group = "TabLineSel", guifg = "#262626", guibg = "#999999", gui = "bold" } 
 
 hi { group = "Folded", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
 hi { group = "FoldColumn", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
 -- hi FoldColumn   ctermfg=10 ctermbg=none cterm=bold
 hi { group = "ColorColumn", guibg = "#343434" } 
-hi { group = "SignColumn", guibg = "#1c1c1c" } 
+hi { group = "SignColumn", guibg = "#1e1e1e" } 
 
 -- line number/cursor
-hi { group = "LineNr", guifg = "#939393" } 
+hi { group = "LineNr", guifg = "#737373", guibg = "#1e1e1e" } 
 hi { group = "CursorLineNr", guifg = palette.white, guibg = "#444444", gui = "bold" } 
 hi { group = "CursorLine", guibg = "#303030" } 
 hi { group = "CursorIM", guibg = "#303030" }
@@ -94,10 +98,10 @@ hi { group = "NonText", guifg = "#808080", gui = "bold"}
 hi { group = "Question", guifg = palette.yellow, gui = "bold"}
 
 -- Menus
-hi { group = "Menu", guifg = palette.white, guibg = "#808080", gui = "bold"}
+hi { group = "Menu", guifg = palette.grey1, guibg = "#808080", gui = "bold"}
 hi { group = "WildMenu", guifg = palette.black, guibg = "#b2b2b2", gui = "bold"}
-hi { group = "Pmenu", guifg = palette.white, guibg = "#808080", gui = "bold"}
-hi { group = "PmenuSel", guifg = palette.black, guibg = "#d0d0d0", gui = "bold"}
+hi { group = "Pmenu", guifg = palette.grey1, guibg = "#4d4d4d", gui = "bold"}
+hi { group = "PmenuSel", guifg = palette.black, guibg = "#999999", gui = "bold"}
 hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
 hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
 
@@ -145,20 +149,12 @@ hi { group = "GitSignsChange",  guifg = palette.light_yellow, gui = "bold" }
 hi { group = "GitSignsDelete",  guifg = palette.git_del_red, gui = "bold" }
 
 --
--- Nvim Tree
+-- Neo Tree
 --
-hi { group = "NvimTreeFolderName",  guifg = palette.light_purple, gui = "bold" }
-hi { group = "NvimTreeRootFolder",  guifg = palette.heavy_orange, gui = "bold" }
-hi { group = "NvimTreeOpenedFolderName",  guifg = palette.light_purple, gui = "bold" }
-hi { group = "NvimTreeFolderIcon",  guifg = palette.light_orange, gui = "bold" }
-hi { group = "NvimTreeGitDirty",  guifg = palette.light_orange, gui = "bold" }
-hi { group = "NvimTreeGitNew",  guifg = palette.git_add_green, gui = "bold" }
-hi { group = "NvimTreeFileIcon",  guifg = palette.light_blue, gui = "bold" }
-hi { group = "NvimTreeExecFile",  guifg = palette.light_grey, }
-hi { group = "NvimTreeOpenedFile",  guifg = palette.light_grey, }
-hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
-hi { group = "NvimTreeSpecialFile",  guifg = palette.light_grey, }
-hi { group = "NvimTreeImageFile",  guifg = palette.light_grey, }
+hi { group = "NeoTreeDirectoryIcon",  guifg = palette.light_orange, gui = "bold" }
+hi { group = "NeoTreeFileNameOpened",  guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "NeoTreeRootName",  guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "NeoTreeNormal", guifg = palette.grey1, guibg = "#262626", }
 
 --
 -- Telescope
@@ -181,7 +177,7 @@ hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold"
 --
 
 -- Miscellaneous
-hi { group = "@comment",  guifg = "#808080", }
+hi { group = "@comment",  guifg = "#808080", gui = "italic"}
 hi { group = "@error",  guifg = palette.light_grey, }
 hi { group = "@none",  guifg = palette.light_grey, }
 hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
@@ -190,11 +186,12 @@ hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
 
 -- Punctuation
 hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@punctuation.bracket",  guifg = palette.white }
+hi { group = "@punctuation.bracket",  guifg = palette.grey1 }
 hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
 
 -- Literal
 hi { group = "@string",  guifg = palette.light_green, gui = "bold"}
+hi { group = "@string.documentation",  guifg = palette.light_green, }
 hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
 hi { group = "@string.special",  guifg = palette.heavy_orange, gui = "bold"}
@@ -206,13 +203,13 @@ hi { group = "@float",  guifg = palette.light_purple, gui = "bold"}
 
 -- Functions
 hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@function.builtin",  guifg = palette.white, gui = "bold"}
-hi { group = "@function.call",  guifg = palette.white, gui = "bold"}
+hi { group = "@function.builtin",  guifg = palette.grey1, gui = "bold"}
+hi { group = "@function.call",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@function.macro",  guifg = palette.heavy_purple, gui = "bold"}
 hi { group = "@method",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@method.call",  guifg = palette.white, gui = "bold"}
-hi { group = "@constructor",  guifg = palette.white, gui = "bold"}
-hi { group = "@parameter",  guifg = palette.heavy_grey, gui = "bold"}
+hi { group = "@method.call",  guifg = palette.grey1, gui = "bold"}
+hi { group = "@constructor",  guifg = palette.grey1, gui = "bold"}
+hi { group = "@parameter",  guifg = palette.grey3, gui = "bold"}
 
 -- Keywords
 hi { group = "@keyword",  guifg = palette.light_red, gui = "bold"}
@@ -234,11 +231,11 @@ hi { group = "@type.definition",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@type.qualifier",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@storageclass",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@attribute",  guifg = palette.light_yellow, gui = "bold" }
-hi { group = "@field",  guifg = palette.light_grey, }
-hi { group = "@property",  guifg = palette.light_grey, }
+hi { group = "@field",  guifg = palette.grey2, }
+hi { group = "@property",  guifg = palette.grey2, }
 
 -- Identifiers
--- hi { group = "@variable",  guifg = palette.light_grey, }
+hi { group = "@variable",  guifg = palette.grey1, }
 hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
 hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
