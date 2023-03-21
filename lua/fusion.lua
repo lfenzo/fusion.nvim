@@ -94,7 +94,7 @@ hi { group = "Directory", guifg = palette.light_purple, gui = "bold"}
 hi { group = "Title", guifg = palette.light_red, gui = "bold"}
 hi { group = "WarningMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "ModeMsg", guifg = palette.white, guibg = palette.black, gui = "bold"}
-hi { group = "NonText", guifg = "#808080", gui = "bold"}
+hi { group = "NonText", guifg = "#595959", gui = "bold"}
 hi { group = "Question", guifg = palette.yellow, gui = "bold"}
 
 -- Menus
