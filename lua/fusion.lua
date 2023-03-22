@@ -19,7 +19,7 @@ palette = {
   light_orange = "#FFAF5F",
   heavy_orange = "#FF9900",
 
-  light_red = "#f27059",
+  light_red = "#ff5f5f",
   heavy_red = "#FF1E08",
   
   light_yellow = "#ffd787",
