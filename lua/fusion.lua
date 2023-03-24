@@ -141,6 +141,11 @@ hi { group = "Include", guifg = palette.light_blue, gui = "bold" }
 hi { group = "Define", guifg = palette.white, gui = "bold" } 
 hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" } 
 
+-- Diff
+hi { group = "DiffAdd", guibg = "#024e00", gui = "bold"} 
+hi { group = "DiffChange", guibg = "#5c4b00", gui = "bold"} 
+hi { group = "DiffDelete", guibg = "#6b0009", gui = "bold"} 
+
 --
 -- GitSigns
 --
@@ -149,7 +154,7 @@ hi { group = "GitSignsChange",  guifg = palette.light_yellow, gui = "bold" }
 hi { group = "GitSignsDelete",  guifg = palette.git_del_red, gui = "bold" }
 
 --
--- Neo Tree
+-- NeoTree
 --
 hi { group = "NeoTreeDirectoryIcon",  guifg = palette.light_orange, gui = "bold" }
 hi { group = "NeoTreeFileNameOpened",  guifg = palette.heavy_orange, gui = "bold" }
@@ -167,6 +172,22 @@ hi { group = "TelescopeSelection", guifg = palette.white, guibg = "#636363", gui
 hi { group = "TelescopeSelectionCaret", guifg = palette.heavy_yellow, guibg = "#636363", gui = "bold" }
 hi { group = "TelescopeMatching", guifg = palette.heavy_yellow, gui = "bold" }
 hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold" }
+
+-- UndoTree
+hi { group = "UndotreeNode", guifg = palette.heavy_orange }
+hi { group = "UndotreeNodeCurrent", guifg = palette.light_green, gui = "bold" }
+hi { group = "UndotreeTimeStamp", guifg = "#7e7e7e", gui = "bold" }
+hi { group = "UndotreeBranch", guifg = "#999999", gui = "bold" }
+hi { group = "UndotreeFirstNode", guifg = palette.heavy_green, gui = "bold" }
+hi { group = "UndotreeCurrent", guifg = palette.light_blue, gui = "bold" }
+hi { group = "UndotreeNext", guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "UndotreeHelp", guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "UndotreeHelpKey", guifg = palette.light_orange, gui = "bold" }
+hi { group = "UndotreeHelpTitle", guifg = palette.light_red, gui = "bold" }
+hi { group = "UndotreeSavedSmall", guifg = palette.light_purple, gui = "bold" }
+hi { group = "UndotreeSavedBig", guifg = palette.light_purple, gui = "bold" }
+hi { group = "UndotreeHead", guifg = palette.light_red, gui = "bold" }
+hi { group = "UndotreeSeq", guifg = palette.grey3, gui = "bold" }
 
 --
 --
