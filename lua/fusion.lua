@@ -160,6 +160,7 @@ hi { group = "NeoTreeDirectoryIcon",  guifg = palette.light_orange, gui = "bold"
 hi { group = "NeoTreeFileNameOpened",  guifg = palette.heavy_orange, gui = "bold" }
 hi { group = "NeoTreeRootName",  guifg = palette.heavy_orange, gui = "bold" }
 hi { group = "NeoTreeNormal", guifg = palette.grey1, guibg = "#262626", }
+hi { group = "NeoTreeNormalNC", guifg = palette.grey1, guibg = "#262626", }
 
 --
 -- Telescope
