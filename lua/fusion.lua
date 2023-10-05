@@ -100,7 +100,8 @@ hi { group = "Question", guifg = palette.yellow, gui = "bold"}
 -- Menus
 hi { group = "Menu", guifg = palette.grey1, guibg = "#808080", gui = "bold"}
 hi { group = "WildMenu", guifg = palette.black, guibg = "#b2b2b2", gui = "bold"}
-hi { group = "Pmenu", guifg = palette.grey1, guibg = "#4d4d4d", gui = "bold"}
+-- hi { group = "Pmenu", guifg = palette.light_red, guibg = "#4d4d4d", gui = "bold"}
+hi { group = "Pmenu", guifg = palette.heavy_grey, guibg = "#484848", gui = "bold"}
 hi { group = "PmenuSel", guifg = palette.black, guibg = "#999999", gui = "bold"}
 hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
 hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
@@ -167,14 +168,16 @@ hi { group = "NeoTreeNormalNC", guifg = palette.grey1, guibg = "#262626", }
 --
 hi { group = "TelescopeNormal", guifg = palette.heavy_grey, }
 hi { group = "TelescopePromptNormal", guifg = palette.white, }
-hi { group = "TelescopeTitle", guifg = palette.white, gui = "bold" }
-hi { group = "TelescopeBorder", guifg = palette.white, gui = "bold" }
+hi { group = "TelescopeTitle", guifg = palette.light_grey, gui = "bold" }
+hi { group = "TelescopeBorder", guifg = "#888888", gui = "bold" }
 hi { group = "TelescopeSelection", guifg = palette.white, guibg = "#636363", gui = "bold" }
 hi { group = "TelescopeSelectionCaret", guifg = palette.heavy_yellow, guibg = "#636363", gui = "bold" }
 hi { group = "TelescopeMatching", guifg = palette.heavy_yellow, gui = "bold" }
 hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold" }
 
+--
 -- UndoTree
+--
 hi { group = "UndotreeNode", guifg = palette.heavy_orange }
 hi { group = "UndotreeNodeCurrent", guifg = palette.light_green, gui = "bold" }
 hi { group = "UndotreeTimeStamp", guifg = "#7e7e7e", gui = "bold" }
@@ -191,6 +194,26 @@ hi { group = "UndotreeHead", guifg = palette.light_red, gui = "bold" }
 hi { group = "UndotreeSeq", guifg = palette.grey3, gui = "bold" }
 
 --
+-- LSP configs
+--
+hi { group = "CmpDocumentation", guifg = palette.light_red }
+hi { group = "CmpDocumentationBorder", guifg = palette.light_red }
+hi { group = "CmpItemMenu", guifg = "#888888" }
+hi { group = "CmpItemAbbr", guifg = palette.grey3 }
+hi { group = "CmpItemAbbrMatch", guifg = palette.heavy_yellow, gui = "bold" }
+hi { group = "CmpItemAbbrMatchFuzzy", guifg = palette.light_yellow, gui = "bold" }
+hi { group = "CmpItemKindKeyword", guifg = palette.light_blue }
+hi { group = "CmpItemKindFunction", guifg = palette.heavy_orange }
+hi { group = "CmpItemKindConstant", guifg = palette.heavy_green }
+hi { group = "CmpItemKindClass", guifg = palette.light_red }
+hi { group = "CmpItemKindStruct", guifg = palette.light_red }
+hi { group = "CmpItemKindModule", guifg = palette.light_yellow }
+hi { group = "CmpItemKindReference", guifg = palette.light_purple }
+hi { group = "CmpItemKindVariable", guifg = palette.heavy_grey }
+hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
+
+
+--
 --
 --
 -- Tree-Sitter Generic Syntax
@@ -205,12 +228,10 @@ hi { group = "@none",  guifg = palette.light_grey, }
 hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@define",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
-
 -- Punctuation
 hi { group = "@punctuation.delimiter",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@punctuation.bracket",  guifg = palette.grey1 }
 hi { group = "@punctuation.special",  guifg = palette.light_orange, gui = "bold"}
-
 -- Literal
 hi { group = "@string",  guifg = palette.light_green, gui = "bold"}
 hi { group = "@string.documentation",  guifg = palette.light_green, }
@@ -222,7 +243,6 @@ hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@number",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@float",  guifg = palette.light_purple, gui = "bold"}
-
 -- Functions
 hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@function.builtin",  guifg = palette.grey1, gui = "bold"}
@@ -232,9 +252,9 @@ hi { group = "@method",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@method.call",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@constructor",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@parameter",  guifg = palette.grey3, gui = "bold"}
-
 -- Keywords
 hi { group = "@keyword",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@keyword.coroutine",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@keyword.function",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@keyword.operator",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@keyword.return",  guifg = palette.light_blue, gui = "bold"}
@@ -245,7 +265,6 @@ hi { group = "@debug",  guifg = palette.heavy_grey, gui = "bold"}
 hi { group = "@label",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@include",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@exception",  guifg = palette.light_blue, gui = "bold"}
-
 -- Types
 hi { group = "@type",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@type.builtin",  guifg = palette.heavy_blue, gui = "bold"}
@@ -255,7 +274,6 @@ hi { group = "@storageclass",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@attribute",  guifg = palette.light_yellow, gui = "bold" }
 hi { group = "@field",  guifg = palette.grey2, }
 hi { group = "@property",  guifg = palette.grey2, }
-
 -- Identifiers
 hi { group = "@variable",  guifg = palette.grey1, }
 hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
@@ -264,7 +282,6 @@ hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@constant.macro",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@namespace",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
-
 -- Text
 hi { group = "@text",  guifg = palette.ehite, }
 hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
@@ -284,12 +301,10 @@ hi { group = "@text.warning",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@text.danger",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@text.diff.add",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@text.diff.delete",  guifg = palette.heavy_green, gui = "bold"}
-
 -- Tags
 hi { group = "@tag",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@tag.attribute",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
-
 -- Locals
 hi { group = "@definition",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@definition.constant",  guifg = palette.light_blue, gui = "bold"}

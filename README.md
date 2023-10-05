@@ -28,14 +28,7 @@ We don't recommend the installation, but in case you have the bad idea of instal
 1. Inside your `plugins.lua` add the following:
 
 ```lua
-return packer.startup(function(use)
-  -- ...
   use {"lfenzo/fusion.nvim", branch = "main"} -- or `branch = "vim-polyglot"` for the vim-polyglot branch
-  -- ...
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
-end)
 ```
 
 2. Add the following your `init.lua` or equivalent:
