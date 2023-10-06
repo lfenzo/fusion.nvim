@@ -201,7 +201,7 @@ hi { group = "CmpDocumentationBorder", guifg = palette.light_red }
 hi { group = "CmpItemMenu", guifg = "#888888" }
 hi { group = "CmpItemAbbr", guifg = palette.grey3 }
 hi { group = "CmpItemAbbrMatch", guifg = palette.heavy_yellow, gui = "bold" }
-hi { group = "CmpItemAbbrMatchFuzzy", guifg = palette.light_yellow, gui = "bold" }
+hi { group = "CmpItemAbbrMatchFuzzy", guifg = palette.heavy_yellow, gui = "bold" }
 hi { group = "CmpItemKindKeyword", guifg = palette.light_blue }
 hi { group = "CmpItemKindFunction", guifg = palette.heavy_orange }
 hi { group = "CmpItemKindConstant", guifg = palette.heavy_green }
