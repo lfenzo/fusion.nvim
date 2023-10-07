@@ -36,3 +36,9 @@ We don't recommend the installation, but in case you have the bad idea of instal
 ```lua
 vim.cmd[[colorscheme fusion]]
 ```
+## Images
+
+![](./img/python.png)
+![](./img/telescope.png)
+![](./img/julia.png)
+![](./img/c.png)
