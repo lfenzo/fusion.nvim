@@ -110,7 +110,7 @@ hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
 --
 -- Generic syntax
 --
-hi { group = "Comment", guifg = "#808080", } 
+hi { group = "Comment", guifg = "#727272", } 
 hi { group = "SpecialComment", guifg = "#808080", gui = "bold" } 
 hi { group = "Constant", guifg = palette.heavy_green, gui = "bold" } 
 hi { group = "String", guifg = palette.light_green, gui = "bold" } 
@@ -222,7 +222,7 @@ hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
 --
 
 -- Miscellaneous
-hi { group = "@comment",  guifg = "#808080", gui = "italic"}
+hi { group = "@comment",  guifg = "#727272", gui = "italic"}
 hi { group = "@error",  guifg = palette.light_grey, }
 hi { group = "@none",  guifg = palette.light_grey, }
 hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
