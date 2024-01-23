@@ -223,8 +223,9 @@ hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
 
 -- Miscellaneous
 hi { group = "@comment",  guifg = "#727272", gui = "italic"}
+hi { group = "@comment.todo",  guifg = "#727272", gui = "italic"}
+hi { group = "@comment.note",  guifg = palette.heavy_yellow, gui = "italic"}
 hi { group = "@error",  guifg = palette.light_grey, }
-hi { group = "@none",  guifg = palette.light_grey, }
 hi { group = "@preproc",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@define",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@operator",  guifg = palette.light_orange, gui = "bold"}
@@ -238,6 +239,7 @@ hi { group = "@string.documentation",  guifg = palette.light_green, }
 hi { group = "@string.regex",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@string.escape",  guifg = palette.heavy_purple, gui = "bold"}
 hi { group = "@string.special",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@string.special.symbol",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@character",  guifg = palette.light_green, gui = "bold"}
 hi { group = "@character.special",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@boolean",  guifg = palette.light_purple, gui = "bold"}
@@ -248,19 +250,21 @@ hi { group = "@function",  guifg = palette.heavy_orange, gui = "bold"}
 hi { group = "@function.builtin",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@function.call",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@function.macro",  guifg = palette.heavy_purple, gui = "bold"}
-hi { group = "@method",  guifg = palette.heavy_orange, gui = "bold"}
-hi { group = "@method.call",  guifg = palette.grey1, gui = "bold"}
+hi { group = "@function.method",  guifg = palette.heavy_orange, gui = "bold"}
+hi { group = "@function.method.call",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@constructor",  guifg = palette.grey1, gui = "bold"}
 hi { group = "@parameter",  guifg = palette.grey3, gui = "bold"}
 -- Keywords
 hi { group = "@keyword",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@keyword.coroutine",  guifg = palette.light_red, gui = "bold"}
 hi { group = "@keyword.function",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@keyword.import",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@keyword.operator",  guifg = palette.light_orange, gui = "bold"}
+hi { group = "@keyword.repeat",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@keyword.return",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@conditional",  guifg = palette.light_blue, gui = "bold"}
-hi { group = "@conditional.ternary",  guifg = palette.light_orange, gui = "bold"}
-hi { group = "@repeat",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@keyword.exception",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@keyword.conditional",  guifg = palette.light_blue, gui = "bold"}
+hi { group = "@keyword.conditional.ternary",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@debug",  guifg = palette.heavy_grey, gui = "bold"}
 hi { group = "@label",  guifg = palette.heavy_blue, gui = "bold"}
 hi { group = "@include",  guifg = palette.light_blue, gui = "bold"}
@@ -281,7 +285,6 @@ hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
 hi { group = "@constant.builtin",  guifg = palette.light_purple, gui = "bold"}
 hi { group = "@constant.macro",  guifg = palette.light_orange, gui = "bold"}
 hi { group = "@namespace",  guifg = palette.light_yellow, gui = "bold"}
-hi { group = "@symbol",  guifg = palette.heavy_green, gui = "bold"}
 -- Text
 hi { group = "@text",  guifg = palette.ehite, }
 hi { group = "@text.strong",  guifg = palette.light_orange, gui = "bold"}
