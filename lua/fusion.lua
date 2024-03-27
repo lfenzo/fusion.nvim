@@ -21,7 +21,7 @@ palette = {
 
   light_red = "#ff5f5f",
   heavy_red = "#FF1E08",
-  
+
   light_yellow = "#ffd787",
   heavy_yellow = "#FFDC2F",
 
@@ -68,12 +68,12 @@ hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, g
 --hi { group = "Error", guifg = palette.white, gui = "bold"} -- ignore
 
 -- statusline
-hi { group = "StatusLine", guifg = palette.black, guibg = "#999999", gui = "bold"} 
-hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"} 
-hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626"} 
+hi { group = "StatusLine", guifg = palette.black, guibg = "#999999", gui='bold'}
+hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"}
+hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626"}
 
 -- Tabs
-hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"} 
+hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"}
 hi { group = "TabLine", guifg = "#b2b2b2", guibg = "#484848", } 
 hi { group = "TabLineSel", guifg = "#262626", guibg = "#999999", gui = "bold" } 
 
@@ -324,3 +324,33 @@ hi { group = "@definition.import",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@definition.associated",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@scope",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@reference",  guifg = palette.light_blue, gui = "bold"}
+
+
+-- Function to get the current Git branch
+function get_git_branch()
+    local branch = vim.fn.systemlist("git rev-parse --abbrev-ref HEAD 2>/dev/null")[1]
+    if branch == 'HEAD' then
+        return ''
+    else
+        return branch
+    end
+end
+
+-- Function to check if the current directory is a Git repository
+function is_git_repo()
+    local git_dir = vim.fn.systemlist("git rev-parse --is-inside-work-tree 2>/dev/null")[1]
+    return git_dir == 'true'
+end
+
+vim.cmd [[highlight GitBranchColor guifg=#D0CFCC guibg=#505050 gui='bold']]
+vim.cmd [[highlight ModifiedColor guifg=#000000 guibg=#FDC42C gui='bold']]
+
+-- Update the statusline
+local modified_file_status = "%#ModifiedColor#%{&mod?'  ':''}%*"
+local git_status = ""
+
+if is_git_repo() then
+    git_status = git_status .. "%#GitBranchColor#" .. "  %{v:lua.get_git_branch()} " .. "%*"
+end
+
+vim.o.statusline = git_status .. modified_file_status .. " %F %=%p%% L: %l, C: %c "
