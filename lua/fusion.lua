@@ -346,11 +346,11 @@ vim.cmd [[highlight GitBranchColor guifg=#D0CFCC guibg=#505050 gui='bold']]
 vim.cmd [[highlight ModifiedColor guifg=#000000 guibg=#FDC42C gui='bold']]
 
 -- Update the statusline
-local modified_file_status = "%#ModifiedColor#%{&mod?'  ':''}%*"
+local modified_file_status = "%#ModifiedColor#%m%*"
 local git_status = ""
 
 if is_git_repo() then
     git_status = git_status .. "%#GitBranchColor#" .. "  %{v:lua.get_git_branch()} " .. "%*"
 end
 
-vim.o.statusline = git_status .. modified_file_status .. " %F %=%p%% L: %l, C: %c "
+vim.o.statusline = git_status .. modified_file_status .. " %F%=%p%% L: %l, C: %c "
