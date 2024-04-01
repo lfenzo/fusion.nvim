@@ -353,4 +353,4 @@ if is_git_repo() then
     git_status = git_status .. "%#GitBranchColor#" .. "  %{v:lua.get_git_branch()} " .. "%*"
 end
 
-vim.o.statusline = git_status .. modified_file_status .. " %F%=%p%% L: %l, C: %c "
+vim.o.statusline = git_status .. modified_file_status .. " %f%=%p%% L: %l, C: %c "
