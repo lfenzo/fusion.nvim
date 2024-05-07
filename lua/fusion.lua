@@ -56,7 +56,7 @@ end
 -- Interface
 --
 --
-hi { group = "Normal", guibg = palette.background }
+hi { group = "Normal", guibg = "#1E1E1E", guifg="#262626"}
 hi { group = "ErrorMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "MsgArea", guifg = palette.white, }
@@ -70,7 +70,7 @@ hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, g
 -- statusline
 hi { group = "StatusLine", guifg = palette.black, guibg = "#999999", gui='bold'}
 hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"}
-hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626"}
+hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626", gui = "bold"}
 
 -- Tabs
 hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"}
