@@ -40,5 +40,5 @@ vim.cmd[[colorscheme fusion]]
 
 ![](./img/python.png)
 ![](./img/telescope.png)
-![](./img/julia.png)
+![](./img/packer.png)
 ![](./img/c.png)
