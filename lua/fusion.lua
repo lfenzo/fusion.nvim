@@ -57,7 +57,7 @@ end
 -- Interface
 --
 --
-hi { group = "Normal", guibg = "#1E1E1E", guifg="#262626" }
+hi { group = "Normal", guifg = palette.grey1 }
 hi { group = "ErrorMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "MsgArea", guifg = palette.white, }
@@ -163,6 +163,8 @@ hi { group = "NeoTreeFileNameOpened",  guifg = palette.heavy_orange, gui = "bold
 hi { group = "NeoTreeRootName",  guifg = palette.heavy_orange, gui = "bold" }
 hi { group = "NeoTreeNormal", guifg = palette.grey1, guibg = "#262626", }
 hi { group = "NeoTreeNormalNC", guifg = palette.grey1, guibg = "#262626", }
+hi { group = "NeoTreeWinSeparator ", guifg = "#1e1e1e", guibg = "#262626", }
+
 
 --
 -- Telescope
