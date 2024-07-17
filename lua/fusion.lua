@@ -59,7 +59,7 @@ end
 --
 hi { group = "Normal", guifg = palette.grey1 }
 hi { group = "ErrorMsg", guifg = palette.light_red, gui = "bold"}
-hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
+hi { group = "MoreMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "MsgArea", guifg = palette.white, }
 hi { group = "Visual", guibg = "#636363" }
 hi { group = "Todo", guifg = palette.black, guibg = palette.heavy_yellow, gui = "bold"} 
@@ -71,7 +71,7 @@ hi { group = "IncSearch", guifg = palette.black, guibg = palette.heavy_yellow, g
 -- statusline
 hi { group = "StatusLine", guifg = palette.black, guibg = "#999999", gui='bold'}
 hi { group = "StatusLineNC", guifg = "#b2b2b2", guibg = "#484848"}
-hi { group = "VertSplit", guifg = "#1c1c1c", guibg = "#262626"}
+hi { group = "WinSeparator", guifg = "#1c1c1c", guibg = "#262626"}
 
 -- Tabs
 hi { group = "TabLineFill", guifg = "#b2b2b2", guibg = "#1e1e1e"}
@@ -80,7 +80,6 @@ hi { group = "TabLineSel", guifg = "#262626", guibg = "#999999", gui = "bold" }
 
 hi { group = "Folded", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
 hi { group = "FoldColumn", guifg = palette.heavy_yellow, guibg = "#343434", gui = "bold"} 
--- hi FoldColumn   ctermfg=10 ctermbg=none cterm=bold
 hi { group = "ColorColumn", guibg = "#343434" } 
 hi { group = "SignColumn", guibg = "#1e1e1e" } 
 
@@ -101,11 +100,11 @@ hi { group = "Question", guifg = palette.yellow, gui = "bold"}
 -- Menus
 hi { group = "Menu", guifg = palette.grey1, guibg = "#808080", gui = "bold"}
 hi { group = "WildMenu", guifg = palette.black, guibg = "#b2b2b2", gui = "bold"}
--- hi { group = "Pmenu", guifg = palette.light_red, guibg = "#4d4d4d", gui = "bold"}
 hi { group = "Pmenu", guifg = palette.heavy_grey, guibg = "#484848", gui = "bold"}
 hi { group = "PmenuSel", guifg = palette.black, guibg = "#999999", gui = "bold"}
 hi { group = "PmenuSbar", guibg = "#969696", gui = "bold"}
-hi { group = "PmenuThumb",  guibg = "#d0d0d0", gui = "bold"}
+hi { group = "NormalFloat", guifg = palette.grey3, guibg = "#262626", gui = "bold"}
+hi { group = "FloatBorder", guifg = palette.grey1, guibg = "#262626", gui = "bold"}
 
 
 --
@@ -164,6 +163,10 @@ hi { group = "NeoTreeRootName",  guifg = palette.heavy_orange, gui = "bold" }
 hi { group = "NeoTreeNormal", guifg = palette.grey1, guibg = "#262626", }
 hi { group = "NeoTreeNormalNC", guifg = palette.grey1, guibg = "#262626", }
 hi { group = "NeoTreeWinSeparator ", guifg = "#1e1e1e", guibg = "#262626", }
+hi { group = "NeoTreeFloatTitle", guibg = palette.black, gui="bold"}
+hi { group = "NeoTreeTitleBar", guifg = palette.black, guibg = "#999999", gui="bold" }
+hi { group = "NeoTreeFloatBorder", guifg = "#999999", guibg = "#262626", gui="bold" }
+hi { group = "NeoTreeFilterTerm", guifg = palette.light_red, gui="bold" }
 
 
 --
@@ -177,6 +180,8 @@ hi { group = "TelescopeSelection", guifg = palette.white, guibg = "#636363", gui
 hi { group = "TelescopeSelectionCaret", guifg = palette.heavy_yellow, guibg = "#636363", gui = "bold" }
 hi { group = "TelescopeMatching", guifg = palette.heavy_yellow, gui = "bold" }
 hi { group = "TelescopePromptPrefix", guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "TelescopePromptBorder", guifg = palette.grey1, gui = "bold" }
+hi { group = "TelescopePromptTitle", guifg = palette.greq1, gui = "bold" }
 
 --
 -- UndoTree
@@ -227,7 +232,7 @@ hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
 -- Identifiers
 hi { group = "@variable",  guifg = palette.grey1, }
 hi { group = "@variable.builtin",  guifg = palette.heavy_purple, gui = "bold" }
-hi { group = "@variable.parameter",  guifg = palette.heavy_grey, gui = "italic" }
+hi { group = "@variable.parameter",  guifg = palette.heavy_grey, gui = "bold" }
 hi { group = "@variable.parameter.builtin",  guifg = palette.grey3, gui = "bold" }
 hi { group = "@variable.member",  guifg = palette.grey1, gui = "bold" }
 hi { group = "@constant",  guifg = palette.heavy_green, gui = "bold"}
