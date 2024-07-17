@@ -57,7 +57,7 @@ end
 -- Interface
 --
 --
-hi { group = "Normal", guibg = palette.background }
+hi { group = "Normal", guibg = "#1E1E1E", guifg="#262626" }
 hi { group = "ErrorMsg", guifg = palette.light_red, gui = "bold"}
 hi { group = "MoreMsg", guifg = palette.fusion9, gui = "bold"}
 hi { group = "MsgArea", guifg = palette.white, }
