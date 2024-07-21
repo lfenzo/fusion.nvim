@@ -1,0 +1,56 @@
+version: "3"
+services:
+
+  diarization:
+    build:
+      context: diarization/
+      dockerfile: Containerfile
+    image: diarization
+    ports:
+      - 8888:8888
+    volumes:
+      - ./diarization:/diarization:Z
+      - ./outputs:/outputs:Z
+    env_file:
+      - ./ENV
+    command: [
+      "bash",
+      "-c",
+      "source activate diarization && jupyter lab --ip=0.0.0.0 --port 8888 --no-browser --allow-root --notebook-dir=/diarization"
+    ]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    security_opt:
+      - "label=disable"
+
+  summarization:
+    build:
+      context: summarization/
+      dockerfile: Containerfile
+    image: summarization
+    ports:
+      - 8889:8889
+    volumes:
+      - ./summarization:/summarization:Z
+      - ./outputs:/outputs:Z
+    env_file:
+      - ./ENV
+    command: [
+      "bash",
+      "-c",
+      "jupyter lab --ip=0.0.0.0 --port 8889 --no-browser --allow-root --notebook-dir=/summarization"
+    ]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    security_opt:
+      - "label=disable"

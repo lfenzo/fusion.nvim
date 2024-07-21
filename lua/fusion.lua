@@ -7,6 +7,9 @@ vim.g.colors_name = "fusion"
 
 palette = {
 
+  light_cyan = "#4EC9B0",
+  heavy_cyan = "#56B6C2",
+
   light_blue = "#87AFFF",
   heavy_blue = "#6A8FF6",
 
@@ -327,6 +330,25 @@ hi { group = "@markup.list.unchecked",  guifg = palette.light_orange, gui="bold"
 hi { group = "@tag",  guifg = palette.light_blue, gui = "bold"}
 hi { group = "@tag.attribute",  guifg = palette.light_yellow, gui = "bold"}
 hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
+
+
+-- 
+-- Language-Specific (Tree Sitter)
+-- 
+
+-- Yaml
+hi { group = "@property.yaml",  guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@punctuation.bracket.yaml",  guifg = palette.grey3, gui = "bold"}
+
+-- Toml
+hi { group = "@punctuation.bracket.toml",  guifg = palette.grey2, gui = "bold"}
+hi { group = "@type.toml",  guifg = palette.light_red, gui = "bold"}
+hi { group = "@property.toml", guifg = palette.heavy_green, gui = "bold"}
+
+-- Json
+hi { group = "@property.json", guifg = palette.heavy_green, gui = "bold"}
+hi { group = "@punctuation.bracket.json",  guifg = palette.grey3, gui = "bold"}
+
 
 
 -- Function to get the current Git branch
