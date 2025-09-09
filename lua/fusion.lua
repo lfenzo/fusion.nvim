@@ -227,8 +227,13 @@ hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
 --
 -- Indent Blankline
 --
-hi { group = "@ibl.indent.char", guifg = "#393939" }
-hi { group = "@ibl.scope.char", guifg = "#484848" }
+local hooks_ok, hooks = pcall(require, "ibl.hooks")
+if hooks_ok then
+    hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+        vim.api.nvim_set_hl(0, "@ibl.indent.char", { fg = "#393939" })
+        vim.api.nvim_set_hl(0, "@ibl.scope.char", { fg = "#484848" })
+    end)
+end
 
 
 --
