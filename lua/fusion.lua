@@ -113,42 +113,42 @@ hi { group = "FloatBorder", guifg = palette.grey1, guibg = "#262626", gui = "bol
 --
 -- Generic syntax
 --
-hi { group = "Comment", guifg = "#727272", } 
-hi { group = "SpecialComment", guifg = "#808080", gui = "bold" } 
-hi { group = "Constant", guifg = palette.heavy_green, gui = "bold" } 
-hi { group = "String", guifg = palette.light_green, gui = "bold" } 
-hi { group = "Character", guifg = palette.light_green, gui = "bold" } 
-hi { group = "Number", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "Float", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "Boolean", guifg = palette.light_purple, gui = "bold" } 
-hi { group = "Special", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "SpecialChar", guifg = palette.purple, gui = "bold" } 
-hi { group = "Debug", guifg = palette.purple, gui = "bold" } 
-hi { group = "Tag", guifg = palette.purple, gui = "bold" } 
-hi { group = "Delimiter", guifg = palette.light_red, gui = "bold" } 
+hi { group = "Comment", guifg = "#727272", }
+hi { group = "SpecialComment", guifg = "#808080", gui = "bold" }
+hi { group = "Constant", guifg = palette.heavy_green, gui = "bold" }
+hi { group = "String", guifg = palette.light_green, gui = "bold" }
+hi { group = "Character", guifg = palette.light_green, gui = "bold" }
+hi { group = "Number", guifg = palette.light_purple, gui = "bold" }
+hi { group = "Float", guifg = palette.light_purple, gui = "bold" }
+hi { group = "Boolean", guifg = palette.light_purple, gui = "bold" }
+hi { group = "Special", guifg = palette.light_orange, gui = "bold" }
+hi { group = "SpecialChar", guifg = palette.purple, gui = "bold" }
+hi { group = "Debug", guifg = palette.purple, gui = "bold" }
+hi { group = "Tag", guifg = palette.purple, gui = "bold" }
+hi { group = "Delimiter", guifg = palette.light_red, gui = "bold" }
 hi { group = "Identifier", }
-hi { group = "Function", guifg = palette.heavy_orange, gui = "bold" } 
-hi { group = "Operator", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "Statement", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "Conditional", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "Repeat", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "Label", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "Keyword", guifg = palette.light_red, gui = "bold" } 
-hi { group = "Exeption", guifg = palette.light_red, gui = "bold" } 
-hi { group = "Type", guifg = palette.heavy_blue, gui = "bold" } 
-hi { group = "StorageClass", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "Structure", guifg = palette.light_red, gui = "bold" } 
-hi { group = "Typedef", guifg = palette.light_orange, gui = "bold" } 
-hi { group = "PreCondit", guifg = palette.light_red, gui = "bold" } 
-hi { group = "PreProc", guifg = palette.light_red, gui = "bold" } 
-hi { group = "Include", guifg = palette.light_blue, gui = "bold" } 
-hi { group = "Define", guifg = palette.white, gui = "bold" } 
-hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" } 
+hi { group = "Function", guifg = palette.heavy_orange, gui = "bold" }
+hi { group = "Operator", guifg = palette.light_orange, gui = "bold" }
+hi { group = "Statement", guifg = palette.light_blue, gui = "bold" }
+hi { group = "Conditional", guifg = palette.light_blue, gui = "bold" }
+hi { group = "Repeat", guifg = palette.light_blue, gui = "bold" }
+hi { group = "Label", guifg = palette.light_blue, gui = "bold" }
+hi { group = "Keyword", guifg = palette.light_red, gui = "bold" }
+hi { group = "Exeption", guifg = palette.light_red, gui = "bold" }
+hi { group = "Type", guifg = palette.heavy_blue, gui = "bold" }
+hi { group = "StorageClass", guifg = palette.light_orange, gui = "bold" }
+hi { group = "Structure", guifg = palette.light_red, gui = "bold" }
+hi { group = "Typedef", guifg = palette.light_orange, gui = "bold" }
+hi { group = "PreCondit", guifg = palette.light_red, gui = "bold" }
+hi { group = "PreProc", guifg = palette.light_red, gui = "bold" }
+hi { group = "Include", guifg = palette.light_blue, gui = "bold" }
+hi { group = "Define", guifg = palette.white, gui = "bold" }
+hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" }
 
 -- Diff
-hi { group = "DiffAdd", guibg = "#024e00", gui = "bold"} 
-hi { group = "DiffChange", guibg = "#5c4b00", gui = "bold"} 
-hi { group = "DiffDelete", guibg = "#6b0009", gui = "bold"} 
+hi { group = "DiffAdd", guibg = "#024e00", gui = "bold"}
+hi { group = "DiffChange", guibg = "#5c4b00", gui = "bold"}
+hi { group = "DiffDelete", guibg = "#6b0009", gui = "bold"}
 
 --
 -- GitSigns
@@ -222,6 +222,13 @@ hi { group = "CmpItemKindModule", guifg = palette.light_yellow }
 hi { group = "CmpItemKindReference", guifg = palette.light_purple }
 hi { group = "CmpItemKindVariable", guifg = palette.heavy_grey }
 hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
+
+
+--
+-- Indent Blankline
+--
+hi { group = "@ibl.indent.char", guifg = "#393939" }
+hi { group = "@ibl.scope.char", guifg = "#484848" }
 
 
 --
