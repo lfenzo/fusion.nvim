@@ -225,15 +225,9 @@ hi { group = "CmpItemKindOperator", guifg = palette.light_orange }
 
 
 --
--- Indent Blankline
+-- Mini Indentscope
 --
-local hooks_ok, hooks = pcall(require, "ibl.hooks")
-if hooks_ok then
-    hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-        vim.api.nvim_set_hl(0, "@ibl.indent.char", { fg = "#393939" })
-        vim.api.nvim_set_hl(0, "@ibl.scope.char", { fg = "#484848" })
-    end)
-end
+hi { group = "MiniIndentscopeSymbol", guifg = "#727272" }
 
 
 --
