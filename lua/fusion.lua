@@ -7,29 +7,37 @@ vim.g.colors_name = "fusion"
 
 palette = {
 
-  light_cyan = "#4EC9B0",
-  heavy_cyan = "#56B6C2",
+  -- Cyan (menos saturação no heavy)
+  light_cyan = "#5FD7C7",
+  heavy_cyan = "#3FA7B5",
 
-  light_blue = "#87AFFF",
-  heavy_blue = "#6A8FF6",
+  -- Blue (reduz contraste artificial)
+  light_blue = "#8FAFFF",
+  heavy_blue = "#5F87E6",
 
-  light_green = "#82CF82",
-  heavy_green = "#5FAFAF",
+  -- Green (corrige hue inconsistente)
+  light_green = "#8FD19E",
+  heavy_green = "#4FAF8F",
 
-  light_purple = "#AC85FB",
-  heavy_purple = "#AF65FE",
+  -- Purple (menos neon)
+  light_purple = "#B69CFF",
+  heavy_purple = "#9A6BFF",
 
-  light_orange = "#FFAF5F",
-  heavy_orange = "#FF9900",
+  -- Orange (menos agressivo)
+  light_orange = "#FFB86C",
+  heavy_orange = "#FF9E3D",
 
-  light_red = "#ff5f5f",
-  heavy_red = "#FF1E08",
+  -- Red (menos estourado)
+  light_red = "#FF6B6B",
+  heavy_red = "#E64545",
 
-  light_yellow = "#ffd787",
-  heavy_yellow = "#FFDC2F",
+  -- Yellow (menos brilho puro)
+  light_yellow = "#FFD98C",
+  heavy_yellow = "#E6C84F",
 
-  white = "#F6F5F4",
-  black = "#000000",
+  -- Base
+  white = "#EDEDED",
+  black = "#0D0D0D",
 
   -- grey1 = "#CED4DA",
   grey1 = "#C7CDD3",
@@ -39,8 +47,9 @@ palette = {
   light_grey = "#CECECE",
   heavy_grey = "#B8B8B8",
 
-  git_add_green = "#00D787",
-  git_del_red = "#FF3C4D",
+  -- Git (menos neon)
+  git_add_green = "#3ECF8E",
+  git_del_red = "#E05252",
 }
 
 local hi = function(opts)
