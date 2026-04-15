@@ -17,7 +17,7 @@ palette = {
 
   -- Green (corrige hue inconsistente)
   light_green = "#8FD19E",
-  heavy_green = "#4FAF8F",
+  heavy_green = "#5FAFAF",
 
   -- Purple (menos neon)
   light_purple = "#B69CFF",
