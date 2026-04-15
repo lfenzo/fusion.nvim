@@ -13,7 +13,7 @@ palette = {
 
   -- Blue (reduz contraste artificial)
   light_blue = "#8FAFFF",
-  heavy_blue = "#5F87E6",
+  heavy_blue = "#6A8FF6",
 
   -- Green (corrige hue inconsistente)
   light_green = "#8FD19E",
