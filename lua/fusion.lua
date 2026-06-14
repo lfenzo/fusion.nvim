@@ -155,9 +155,10 @@ hi { group = "Define", guifg = palette.white, gui = "bold" }
 hi { group = "Macro", guifg = palette.heavy_green, gui = "bold" }
 
 -- Diff
-hi { group = "DiffAdd", guibg = "#024e00", gui = "bold"}
-hi { group = "DiffChange", guibg = "#5c4b00", gui = "bold"}
-hi { group = "DiffDelete", guibg = "#6b0009", gui = "bold"}
+hi { group = "DiffAdd", guifg = palette.git_add_green, guibg = "#1a5c2a", gui = "bold"}
+hi { group = "DiffChange", guibg = "#4f4300", gui = "bold"}
+hi { group = "DiffDelete", guibg = "#4a0010", gui = "bold"}
+hi { group = "DiffText", guibg = "#7a6a10", gui = "bold"}
 
 --
 -- GitSigns
@@ -353,7 +354,7 @@ hi { group = "@tag.delimiter",  guifg = palette.heavy_orange, gui = "bold"}
 
 -- Yaml
 hi { group = "@property.yaml",  guifg = palette.heavy_green, gui = "bold"}
-hi { group = "@punctuation.bracket.yaml",  guifg = palette.grey3, gui = "bold"}
+hi { group = "@punctuation.bracket.yaml",  guifg = palette.light_orange, gui = "bold"}
 
 -- Toml
 hi { group = "@punctuation.bracket.toml",  guifg = palette.grey2, gui = "bold"}
